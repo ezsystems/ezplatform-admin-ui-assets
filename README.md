@@ -1,0 +1,1 @@
+# ezplatform-admin-ui-assets
