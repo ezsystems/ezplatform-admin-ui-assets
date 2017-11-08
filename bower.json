@@ -12,6 +12,7 @@
         "bootstrap": "v4.0.0-beta",
         "react": "^15.6.1",
         "jquery": "^3.2.1",
-        "alloyeditor": "^1.4"
+        "alloyeditor": "^1.4",
+        "flatpickr": "^4.0.7"
     }
 }
