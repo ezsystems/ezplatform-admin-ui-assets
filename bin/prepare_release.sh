@@ -45,6 +45,8 @@ ALLOY_DIR="$VENDOR_DIR/alloyeditor"
 ALLOY_NOTICE="$ALLOY_DIR/ALLOY_IN_EZPLATFORMADMINUIASSETS.txt"
 BOOTSTRAP_DIR="$VENDOR_DIR/bootstrap"
 BOOTSTRAP_NOTICE="$BOOTSTRAP_DIR/BOOTSTRAP_IN_EZPLATFORMADMINUIASSETS.txt"
+FLATPICKR_DIR="$VENDOR_DIR/flatpickr"
+FLATPICKR_NOTICE="$FLATPICKR_DIR/FLATPICKR_IN_EZPLATFORMADMINUIASSETS.txt"
 JQUERY_DIR="$VENDOR_DIR/jquery"
 JQUERY_NOTICE="$JQUERY_DIR/JQUERY_IN_EZPLATFORMADMINUIASSETS.txt"
 POPPER_DIR="$VENDOR_DIR/popper.js"
@@ -68,6 +70,7 @@ check_process "clean the vendor dir $VENDOR_DIR"
 echo "# Bower install"
 bower install
 check_process "run bower"
+npm run build-flatpickr
 
 echo "# Removing unused files from Alloy Editor"
 rm -rf "$ALLOY_DIR/api" "$ALLOY_DIR/api-theme" "$ALLOY_DIR/gulp-tasks" "$ALLOY_DIR/lib" "$ALLOY_DIR/src" "$ALLOY_DIR/test" $ALLOY_DIR/dist/alloy-editor/alloy-editor-all-min.js $ALLOY_DIR/dist/alloy-editor/alloy-editor-all.js $ALLOY_DIR/dist/alloy-editor/alloy-editor-core-min.js $ALLOY_DIR/dist/alloy-editor/alloy-editor-core.js $ALLOY_DIR/dist/alloy-editor/alloy-editor-no-ckeditor-min.js $ALLOY_DIR/dist/alloy-editor/alloy-editor-no-ckeditor.js $ALLOY_DIR/dist/alloy-editor/alloy-editor-no-react.js $ALLOY_DIR/dist/alloy-editor/BREAKING_CHANGES.md $ALLOY_DIR/.bower.json $ALLOY_DIR/bower.json $ALLOY_DIR/BREAKING_CHANGES.md $ALLOY_DIR/gulpfile.js $ALLOY_DIR/README.md $ALLOY_DIR/yarn.lock
@@ -76,13 +79,19 @@ echo "This is a customized Alloy Editor version." > $ALLOY_NOTICE
 echo "To decrease the size of the bundle, it includes only the dist folder" >> $ALLOY_NOTICE
 
 echo "# Removing unused files from Bootstrap"
-rm -rf "$BOOTSTRAP_DIR/build" "$BOOTSTRAP_DIR/dist/css" "$BOOTSTRAP_DIR/js" $BOOTSTRAP_DIR/dist/js/bootstrap.js $BOOTSTRAP_DIR/.bower.json $BOOTSTRAP_DIR/apple-touch-icon.png $BOOTSTRAP_DIR/bower.json $BOOTSTRAP_DIR/favicon.ico $BOOTSTRAP_DIR/Gemfile $BOOTSTRAP_DIR/Gemfile.lock $BOOTSTRAP_DIR/index.html $BOOTSTRAP_DIR/package-lock.json $BOOTSTRAP_DIR/package.js $BOOTSTRAP_DIR/robots.txt $BOOTSTRAP_DIR/sache.json
+rm -rf "$BOOTSTRAP_DIR/build" "$BOOTSTRAP_DIR/dist/css" "$BOOTSTRAP_DIR/js" $BOOTSTRAP_DIR/dist/js/bootstrap.js $BOOTSTRAP_DIR/.bower.json $BOOTSTRAP_DIR/apple-touch-icon.png $BOOTSTRAP_DIR/bower.json $BOOTSTRAP_DIR/favicon.ico $BOOTSTRAP_DIR/Gemfile $BOOTSTRAP_DIR/Gemfile.lock $BOOTSTRAP_DIR/index.html $BOOTSTRAP_DIR/package-lock.json $BOOTSTRAP_DIR/package.js $BOOTSTRAP_DIR/robots.txt $BOOTSTRAP_DIR/sache.json $BOOTSTRAP_DIR/README.md
 check_process "clean bootstrap"
 echo "This is a customized Bootstrap version." > $BOOTSTRAP_NOTICE
 echo "To decrease the size of the bundle, it does include scss and dist/js folders only" >> $BOOTSTRAP_NOTICE
 
+echo "# Removing unused files from Flatpickr"
+rm -rf "$FLATPICKR_DIR/node_modules" "$FLATPICKR_DIR/src" $FLATPICKR_DIR/dist/flatpickr.css $FLATPICKR_DIR/dist/ie.css $FLATPICKR_DIR/.bower.json $FLATPICKR_DIR/bower.json $FLATPICKR_DIR/build.ts $FLATPICKR_DIR/CONTRIBUTING.md $FLATPICKR_DIR/custom.d.ts $FLATPICKR_DIR/index.d.ts $FLATPICKR_DIR/ISSUE_TEMPLATE.md $FLATPICKR_DIR/README.md $FLATPICKR_DIR/rollup.config.js $FLATPICKR_DIR/tsconfig.json $FLATPICKR_DIR/zip-release $FLATPICKR_DIR/yarn.lock $FLATPICKR_DIR/package-lock.json
+check_process "clean flatpickr"
+echo "This is a customized Flatpickr version." > $FLATPICKR_NOTICE
+echo "To decrease the size of the bundle, it includes the dist/ folder only" >> $FLATPICKR_NOTICE
+
 echo "# Removing unused files from jQuery"
-rm -rf "$JQUERY_DIR/external" "$JQUERY_DIR/src" $JQUERY_DIR/dist/core.js $JQUERY_DIR/dist/jquery.js $JQUERY_DIR/dist/jquery.min.map $JQUERY_DIR/dist/jquery.slim.js $JQUERY_DIR/dist/jquery.slim.min.js $JQUERY_DIR/dist/jquery.slim.min.map $JQUERY_DIR/dist/.bower.json $JQUERY_DIR/AUTHORS.txt $JQUERY_DIR/bower.json $JQUERY_DIR/README.md
+rm -rf "$JQUERY_DIR/external" "$JQUERY_DIR/src" $JQUERY_DIR/dist/core.js $JQUERY_DIR/dist/jquery.js $JQUERY_DIR/dist/jquery.min.map $JQUERY_DIR/dist/jquery.slim.js $JQUERY_DIR/dist/jquery.slim.min.js $JQUERY_DIR/dist/jquery.slim.min.map $JQUERY_DIR/dist/.bower.json $JQUERY_DIR/AUTHORS.txt $JQUERY_DIR/bower.json $JQUERY_DIR/README.md $JQUERY_DIR/.bower.json
 check_process "clean jquery"
 echo "This is a customized jQuery version." > $JQUERY_NOTICE
 echo "To decrease the size of the bundle, it includes only the minified version of jQuery library" >> $JQUERY_NOTICE

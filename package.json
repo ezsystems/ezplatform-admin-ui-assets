@@ -1,0 +1,16 @@
+{
+    "name": "ezplatform-admin-ui-assets",
+    "scripts": {
+        "build-flatpickr": "cd Resources/public/vendors/flatpickr; npm install; sleep 10; npm run build; sleep 10; cd ../../../../"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ezsystems/ezplatform-admin-ui-assets.git"
+    },
+    "author": "eZ Systems",
+    "license": "GPL-2.0",
+    "bugs": {
+        "url": "https://github.com/ezsystems/ezplatform-admin-ui-assets/issues"
+    },
+    "homepage": "https://github.com/ezsystems/ezplatform-admin-ui-assets#readme"
+}
