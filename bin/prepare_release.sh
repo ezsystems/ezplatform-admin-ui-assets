@@ -53,6 +53,8 @@ POPPER_DIR="$VENDOR_DIR/popper.js"
 POPPER_NOTICE="$POPPER_DIR/POPPER_IN_EZPLATFORMADMINUIASSETS.txt"
 REACT_DIR="$VENDOR_DIR/react"
 REACT_NOTICE="$REACT_DIR/REACT_IN_EZPLATFORMADMINUIASSETS.txt"
+TAGGIFY_DIR="$VENDOR_DIR/taggify"
+TAGGIFY_NOTICE="$TAGGIFY_DIR/TAGGIFY_IN_EZPLATFORMADMINUIASSETS.txt"
 
 CURRENT_BRANCH=`git branch | grep '*' | cut -d ' ' -f 2`
 TMP_BRANCH="version_$VERSION"
@@ -107,6 +109,12 @@ rm -rf $REACT_DIR/.bower.json $REACT_DIR/bower.json $REACT_DIR/react-dom-server.
 check_process "clean React"
 echo "This is a customized React version." > $REACT_NOTICE
 echo "To decrease the size of the bundle, it does not include development-only files" >> $REACT_NOTICE
+
+echo "# Removing unused files from taggify"
+rm -rf "$TAGGIFY_DIR/test" "$TAGGIFY_DIR/src/css" $TAGGIFY_DIR/src/js/taggify-script.js $TAGGIFY_DIR/src/js/taggify.es6.js $TAGGIFY_DIR/src/js/taggify.min.js.gz $TAGGIFY_DIR/.bower.json $TAGGIFY_DIR/.gitignore $TAGGIFY_DIR/.travis.yml $TAGGIFY_DIR/db.json $TAGGIFY_DIR/gulpfile.js $TAGGIFY_DIR/index.html $TAGGIFY_DIR/karma.conf.js $TAGGIFY_DIR/module-generator.js $TAGGIFY_DIR/taggify-comment.js $TAGGIFY_DIR/template.common.js $TAGGIFY_DIR/template.es6.js
+check_process "clean Taggify"
+echo "This is a customized Taggify version." > $TAGGIFY_NOTICE
+echo "To decrease the size of the bundle, it includes production JS scripts only" >> $TAGGIFY_NOTICE
 
 echo "# Creating the custom branch: $TMP_BRANCH"
 git checkout -q -b "$TMP_BRANCH" > /dev/null
