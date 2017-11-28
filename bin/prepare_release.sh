@@ -49,6 +49,8 @@ FLATPICKR_DIR="$VENDOR_DIR/flatpickr"
 FLATPICKR_NOTICE="$FLATPICKR_DIR/FLATPICKR_IN_EZPLATFORMADMINUIASSETS.txt"
 JQUERY_DIR="$VENDOR_DIR/jquery"
 JQUERY_NOTICE="$JQUERY_DIR/JQUERY_IN_EZPLATFORMADMINUIASSETS.txt"
+LEAFLET_DIR="$VENDOR_DIR/leaflet"
+LEAFLET_NOTICE="$LEAFLET_DIR/LEAFLET_IN_EZPLATFORMADMINUIASSETS.txt"
 POPPER_DIR="$VENDOR_DIR/popper.js"
 POPPER_NOTICE="$POPPER_DIR/POPPER_IN_EZPLATFORMADMINUIASSETS.txt"
 REACT_DIR="$VENDOR_DIR/react"
@@ -97,6 +99,12 @@ rm -rf "$JQUERY_DIR/external" "$JQUERY_DIR/src" $JQUERY_DIR/dist/core.js $JQUERY
 check_process "clean jquery"
 echo "This is a customized jQuery version." > $JQUERY_NOTICE
 echo "To decrease the size of the bundle, it includes only the minified version of jQuery library" >> $JQUERY_NOTICE
+
+echo "# Removing unused files from Leaflet"
+rm -rf "$LEAFLET_DIR/docs" $LEAFLET_DIR/.bower.json $LEAFLET_DIR/bower.json $LEAFLET_DIR/CHANGELOG.md $LEAFLET_DIR/CONTRIBUTING.md $LEAFLET_DIR/ISSUE_TEMPLATE.md $LEAFLET_DIR/Jakefile.js $LEAFLET_DIR/PLUGIN-GUIDE.md $LEAFLET_DIR/README.md
+check_process "clean Leaflet"
+echo "This is a customized Leaflet version." > $LEAFLET_NOTICE
+echo "To decrease the size of the bundle, it includes production files only" >> $LEAFLET_NOTICE
 
 echo "# Removing unused files from Popper"
 rm -rf "$POPPER_DIR/dist/esm" "$POPPER_DIR/docs" "$POPPER_DIR/packages" $POPPER_DIR/popper-utils.js $POPPER_DIR/popper-utils.js.map $POPPER_DIR/popper-utils.min.js $POPPER_DIR/popper-utils.min.js.map $POPPER_DIR/popper.js $POPPER_DIR/popper.js.map $POPPER_DIR/popper.min.js $POPPER_DIR/popper.min.js.map $POPPER_DIR/umd/popper-utils.js $POPPER_DIR/umd/popper-utils.js.map $POPPER_DIR/umd/popper-utils.min.js $POPPER_DIR/umd/popper-utils.min.js.map $POPPER_DIR/umd/popper.js $POPPER_DIR/umd/popper.js.map $POPPER_DIR/umd/popper.min.js.map $POPPER_DIR/.bower.json $POPPER_DIR/bower.json $POPPER_DIR/CHANGELOG.md $POPPER_DIR/CODE_OF_CONDUCT.md $POPPER_DIR/CONTRIBUTING.md $POPPER_DIR/lerna.json $POPPER_DIR/MENTIONS.md $POPPER_DIR/popperjs.png $POPPER_DIR/README.md $POPPER_DIR/yarn.lock
