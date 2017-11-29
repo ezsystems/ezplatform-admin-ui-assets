@@ -16,6 +16,6 @@
     "jquery": "^3.2.1",
     "alloyeditor": "^1.4",
     "flatpickr": "^4.0.7",
-    "taggify": "^1.0.0"
+    "taggify": "^1.2.1"
   }
 }
