@@ -1,7 +1,17 @@
 {
     "name": "ezplatform-admin-ui-assets",
     "scripts": {
-        "build-flatpickr": "cd Resources/public/vendors/flatpickr; npm install; sleep 10; npm run build; sleep 10; cd ../../../../"
+        "create-folder": "rm -rf Resources; mkdir Resources; mkdir Resources/public; mkdir Resources/public/vendors",
+        "move-bootstrap": "cp -r node_modules/bootstrap Resources/public/vendors/bootstrap",
+        "move-jquery": "cp -r node_modules/jquery Resources/public/vendors/jquery",
+        "move-alloyeditor": "cp -r node_modules/alloyeditor Resources/public/vendors/alloyeditor",
+        "move-leaflet": "cp -r node_modules/leaflet Resources/public/vendors/leaflet",
+        "move-react": "cp -r node_modules/react Resources/public/vendors/react",
+        "move-react-dom": "cp -r node_modules/react-dom Resources/public/vendors/react-dom",
+        "move-taggify": "cp -r node_modules/taggify Resources/public/vendors/taggify",
+        "move-popper.js": "cp -r node_modules/popper.js Resources/public/vendors/popper.js",
+        "move-flatpickr": "cp -r node_modules/flatpickr Resources/public/vendors/flatpickr",
+        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr"
     },
     "repository": {
         "type": "git",
@@ -12,5 +22,16 @@
     "bugs": {
         "url": "https://github.com/ezsystems/ezplatform-admin-ui-assets/issues"
     },
-    "homepage": "https://github.com/ezsystems/ezplatform-admin-ui-assets#readme"
+    "homepage": "https://github.com/ezsystems/ezplatform-admin-ui-assets#readme",
+    "dependencies": {
+        "alloyeditor": "^1.4",
+        "bootstrap": "^4.0.0-beta.2",
+        "flatpickr": "^4.1.4",
+        "jquery": "^3.2.1",
+        "leaflet": "^1.2.0",
+        "popper.js": "^1.12.9",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "taggify": "^1.2.1"
+    }
 }

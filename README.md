@@ -2,7 +2,8 @@
 
 ## Installing dependencies
 
-1. `bower install`
+1. `npm install`
+2. `npm run prepare-release`
 
 ## Preparing a tag for release
 
