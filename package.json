@@ -11,7 +11,9 @@
         "move-taggify": "cp -r node_modules/taggify Resources/public/vendors/taggify",
         "move-popper.js": "cp -r node_modules/popper.js Resources/public/vendors/popper.js",
         "move-flatpickr": "cp -r node_modules/flatpickr Resources/public/vendors/flatpickr",
-        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr"
+        "move-create-react-class": "cp -r node_modules/create-react-class Resources/public/vendors/create-react-class",
+        "move-prop-types": "cp -r node_modules/prop-types Resources/public/vendors/prop-types",
+        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types"
     },
     "repository": {
         "type": "git",
@@ -26,12 +28,14 @@
     "dependencies": {
         "alloyeditor": "^1.4",
         "bootstrap": "^4.0.0",
+        "create-react-class": "^15.6.3",
         "flatpickr": "^4.1.4",
         "jquery": "^3.2.1",
         "leaflet": "^1.2.0",
         "popper.js": "^1.12.9",
-        "react": "^15.6.1",
-        "react-dom": "^15.6.1",
+        "prop-types": "^15.6.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
         "taggify": "^1.2.1"
     }
 }
