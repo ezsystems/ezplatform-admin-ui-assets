@@ -13,8 +13,9 @@
         "move-flatpickr": "cp -r node_modules/flatpickr Resources/public/vendors/flatpickr",
         "move-create-react-class": "cp -r node_modules/create-react-class Resources/public/vendors/create-react-class",
         "move-prop-types": "cp -r node_modules/prop-types Resources/public/vendors/prop-types",
-        "prepare-release":
-            "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types"
+        "move-moment": "cp -r node_modules/moment Resources/public/vendors/moment",
+        "move-moment-timezone": "cp -r node_modules/moment-timezone Resources/public/vendors/moment-timezone",
+        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types; npm run move-moment; npm run move-moment-timezone"
     },
     "repository": {
         "type": "git",
@@ -33,6 +34,7 @@
         "flatpickr": "^4.1.4",
         "jquery": "^3.2.1",
         "leaflet": "^1.2.0",
+        "moment-timezone": "^0.5.21",
         "popper.js": "^1.12.9",
         "prop-types": "^15.6.0",
         "react": "^16.3.0",
