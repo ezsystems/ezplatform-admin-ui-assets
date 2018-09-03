@@ -59,6 +59,10 @@ REACT_DOM_DIR="$VENDOR_DIR/react-dom"
 REACT_DOM_NOTICE="$REACT_DOM_DIR/REACT_DOM_IN_EZPLATFORMADMINUIASSETS.txt"
 TAGGIFY_DIR="$VENDOR_DIR/taggify"
 TAGGIFY_NOTICE="$TAGGIFY_DIR/TAGGIFY_IN_EZPLATFORMADMINUIASSETS.txt"
+MOMENT_DIR="$VENDOR_DIR/moment"
+MOMENT_NOTICE="$MOMENT_DIR/MOMENT_IN_EZPLATFORMADMINUIASSETS.txt"
+MOMENT_TIMEZONE_DIR="$VENDOR_DIR/moment-timezone"
+MOMENT_TIMEZONE_NOTICE="$MOMENT_TIMEZONE_DIR/MOMENT_TIMEZONE_IN_EZPLATFORMADMINUIASSETS.txt"
 
 CURRENT_BRANCH=`git branch | grep '*' | cut -d ' ' -f 2`
 TMP_BRANCH="version_$VERSION"
@@ -142,6 +146,18 @@ rm -rf "$PROP_TYPES_DIR/lib" "$PROP_TYPES_DIR/node_modules" $PROP_TYPES_DIR/CHAN
 check_process "clean prop-types"
 echo "This is a customized prop-types version." > $PROP_TYPES_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $PROP_TYPES_NOTICE
+
+echo "# Removing unused files from moment"
+rm -rf "$MOMENT_DIR/src"
+check_process "clean moment"
+echo "This is a customized moment version." > $MOMENT_NOTICE
+echo "To decrease the size of the bundle, it includes production-only files" >> $MOMENT_NOTICE
+
+echo "# Removing unused files from moment-timezone"
+rm -rf "$MOMENT_TIMEZONE_DIR/data"
+check_process "clean moment-timezone"
+echo "This is a customized moment version." > $MOMENT_TIMEZONE_NOTICE
+echo "To decrease the size of the bundle, it includes production-only files" >> $MOMENT_TIMEZONE_NOTICE
 
 echo "# Creating the custom branch: $TMP_BRANCH"
 git checkout -q -b "$TMP_BRANCH" > /dev/null
