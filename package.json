@@ -31,6 +31,8 @@
         "alloyeditor": "^1.5.19",
         "bootstrap": "^4.2.1",
         "create-react-class": "^15.6.3",
+        "d3": "^5.7.0",
+        "dagre-d3": "^0.6.3",
         "flatpickr": "^4.5.2",
         "jquery": "^3.3.1",
         "leaflet": "^1.4.0",
