@@ -63,6 +63,10 @@ MOMENT_DIR="$VENDOR_DIR/moment"
 MOMENT_NOTICE="$MOMENT_DIR/MOMENT_IN_EZPLATFORMADMINUIASSETS.txt"
 MOMENT_TIMEZONE_DIR="$VENDOR_DIR/moment-timezone"
 MOMENT_TIMEZONE_NOTICE="$MOMENT_TIMEZONE_DIR/MOMENT_TIMEZONE_IN_EZPLATFORMADMINUIASSETS.txt"
+D3_DIR="$VENDOR_DIR/d3"
+D3_NOTICE="$D3_DIR/D3_IN_EZPLATFORMUIASSETS.txt"
+DAGRE_D3_DIR="$VENDOR_DIR/dagre-d3"
+DAGRE_D3_NOTICE="$DAGRE_D3_DIR/DAGRE_D3_IN_EZPLATFORMUIASSETS.txt"
 
 CURRENT_BRANCH=`git branch | grep '*' | cut -d ' ' -f 2`
 TMP_BRANCH="version_$VERSION"
@@ -158,6 +162,18 @@ rm -rf "$MOMENT_TIMEZONE_DIR/data"
 check_process "clean moment-timezone"
 echo "This is a customized moment version." > $MOMENT_TIMEZONE_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $MOMENT_TIMEZONE_NOTICE
+
+echo "# Removing unused files from d3"
+rm -rf "$D3_DIR/node_modules" $D3_DIR/API.md $D3_DIR/CHANGES.md $D3_DIR/index.js $D3_DIR/ISSUE_TEMPLATE.md $D3_DIR/rollup.config.js $D3_DIR/rollup.node.js $D3_DIR/dist/d3.node.js $D3_DIR/dist/package.js
+check_process "clean d3"
+echo "This is a customized d3 version." > $D3_NOTICE
+echo "To decrease the size of the bundle, it includes production-only files" >> $D3_NOTICE
+
+echo "# Removing unused files from dagre-d3"
+rm -rf "$DAGRE_D3_DIR/node_modules" "$DAGRE_D3_DIR/lib" $DAGRE_D3_DIR/.jscsrc $DAGRE_D3_DIR/.jshintrc $DAGRE_D3_DIR/bower.json $DAGRE_D3_DIR/index.js $DAGRE_D3_DIR/karma.conf.js $DAGRE_D3_DIR/karma.core.conf.js
+check_process "clean dagre-d3"
+echo "This is a customized dagre-d3 version." > $DAGRE_D3_NOTICE
+echo "To decrease the size of the bundle, it includes production-only files" >> $DAGRE_D3_NOTICE
 
 echo "# Creating the custom branch: $TMP_BRANCH"
 git checkout -q -b "$TMP_BRANCH" > /dev/null
