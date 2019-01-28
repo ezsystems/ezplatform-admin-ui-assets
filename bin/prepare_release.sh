@@ -170,7 +170,7 @@ echo "This is a customized d3 version." > $D3_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $D3_NOTICE
 
 echo "# Removing unused files from dagre-d3"
-rm -rf "$DAGRE_D3_DIR/node_modules" "$DAGRE_D3_DIR/lib" $DAGRE_D3_DIR/.jscsrc $DAGRE_D3_DIR/.jshintrc $DAGRE_D3_DIR/bower.json $DAGRE_D3_DIR/index.js $DAGRE_D3_DIR/karma.conf.js $DAGRE_D3_DIR/karma.core.conf.js
+rm -rf "$DAGRE_D3_DIR/node_modules" "$DAGRE_D3_DIR/lib" "$DAGRE_D3_DIR/dist/demo" $DAGRE_D3_DIR/.jscsrc $DAGRE_D3_DIR/.jshintrc $DAGRE_D3_DIR/bower.json $DAGRE_D3_DIR/index.js $DAGRE_D3_DIR/karma.conf.js $DAGRE_D3_DIR/karma.core.conf.js $DAGRE_D3_DIR/dist/dagre-d3.core.js $DAGRE_D3_DIR/dist/dagre-d3.core.min.js $DAGRE_D3_DIR/dist/dagre-d3.core.min.js.map
 check_process "clean dagre-d3"
 echo "This is a customized dagre-d3 version." > $DAGRE_D3_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $DAGRE_D3_NOTICE
