@@ -31,7 +31,7 @@
     "homepage": "https://github.com/ezsystems/ezplatform-admin-ui-assets#readme",
     "dependencies": {
         "alloyeditor": "^1.5.19",
-        "bootstrap": "^4.2.1",
+        "bootstrap": "^4.3.1",
         "create-react-class": "^15.6.3",
         "d3": "^5.7.0",
         "dagre-d3": "^0.6.3",
@@ -39,10 +39,10 @@
         "jquery": "^3.3.1",
         "leaflet": "^1.4.0",
         "moment-timezone": "^0.5.23",
-        "popper.js": "^1.14.6",
-        "prop-types": "^15.6.0",
-        "react": "^16.7.0",
-        "react-dom": "^16.7.0",
+        "popper.js": "^1.14.7",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.2",
+        "react-dom": "^16.8.2",
         "taggify": "^1.2.1"
     }
 }
