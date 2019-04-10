@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "symfony/symfony": "^3.4@beta"
+    "symfony/http-kernel": "^4.3"
   },
   "autoload": {
     "psr-4": {
