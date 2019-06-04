@@ -1,0 +1,191 @@
+@font-face {
+	font-family: 'alloyeditor-default';
+	src:url('fonts/alloyeditor-default.eot');
+	src:url('fonts/alloyeditor-default.eot?#iefix') format('embedded-opentype'),
+		url('fonts/alloyeditor-default.woff') format('woff'),
+		url('fonts/alloyeditor-default.ttf') format('truetype'),
+		url('fonts/alloyeditor-default.svg#alloyeditor-default') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="ae-icon-"], [class*=" ae-icon-"] {
+	display: block;
+	font-family: 'alloyeditor-default';
+	speak: none;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1.2;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.ae-icon-add:before {
+	content: "\";
+}
+
+.ae-icon-align-center:before {
+	content: "\";
+}
+
+.ae-icon-align-justified:before {
+	content: "\";
+}
+
+.ae-icon-align-left:before {
+	content: "\";
+}
+
+.ae-icon-align-right:before {
+	content: "\";
+}
+
+.ae-icon-arrow:before {
+	content: "\";
+}
+
+.ae-icon-audio:before {
+	content: "\";
+}
+
+.ae-icon-bin:before {
+	content: "\";
+}
+
+.ae-icon-bold:before {
+	content: "\";
+}
+
+.ae-icon-bulleted-list:before {
+	content: "\";
+}
+
+.ae-icon-camera:before {
+	content: "\";
+}
+
+.ae-icon-cell:before {
+	content: "\";
+}
+
+.ae-icon-close:before {
+	content: "\";
+}
+
+.ae-icon-code:before {
+	content: "\";
+}
+
+.ae-icon-column:before {
+	content: "\";
+}
+
+.ae-icon-embed:before {
+	content: "\";
+}
+
+.ae-icon-folder:before {
+	content: "\";
+}
+
+.ae-icon-h1:before {
+	content: "\";
+}
+
+.ae-icon-h2:before {
+	content: "\";
+}
+
+.ae-icon-image:before {
+	content: "\";
+}
+
+.ae-icon-indent-block:before {
+	content: "\";
+}
+
+.ae-icon-italic:before {
+	content: "\";
+}
+
+.ae-icon-link:before {
+	content: "\";
+}
+
+.ae-icon-numbered-list:before {
+	content: "\";
+}
+
+.ae-icon-ok:before {
+	content: "\";
+}
+
+.ae-icon-outdent-block:before {
+	content: "\";
+}
+
+.ae-icon-quote:before {
+	content: "\";
+}
+
+.ae-icon-redo:before {
+	content: "\";
+}
+
+.ae-icon-remove:before {
+	content: "\";
+}
+
+.ae-icon-removeformat:before {
+	content: "\";
+}
+
+.ae-icon-row:before {
+	content: "\";
+}
+
+.ae-icon-separator:before {
+	content: "\";
+}
+
+.ae-icon-strike:before {
+	content: "\";
+}
+
+.ae-icon-subscript:before {
+	content: "\";
+}
+
+.ae-icon-superscript:before {
+	content: "\";
+}
+
+.ae-icon-table:before {
+	content: "\";
+}
+
+.ae-icon-twitter:before {
+	content: "\";
+}
+
+.ae-icon-underline:before {
+	content: "\";
+}
+
+.ae-icon-undo:before {
+	content: "\";
+}
+
+.ae-icon-unlink:before {
+	content: "\";
+}
+
+.ae-icon-video:before {
+	content: "\";
+}
