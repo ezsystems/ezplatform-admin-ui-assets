@@ -60,7 +60,8 @@
       weekAbbreviation: "Hf",
       scrollTitle: "Artırmaq üçün sürüşdürün",
       toggleTitle: "Aç / Bağla",
-      amPM: ["GƏ", "GS"]
+      amPM: ["GƏ", "GS"],
+      time_24hr: true
   };
   fp.l10ns.az = Azerbaijan;
   var az = fp.l10ns;

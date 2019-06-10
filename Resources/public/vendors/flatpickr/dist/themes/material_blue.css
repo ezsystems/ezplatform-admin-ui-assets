@@ -167,8 +167,8 @@
   color: #fff;
   fill: #fff;
 }
-.flatpickr-months .flatpickr-prev-month.disabled,
-.flatpickr-months .flatpickr-next-month.disabled {
+.flatpickr-months .flatpickr-prev-month.flatpickr-disabled,
+.flatpickr-months .flatpickr-next-month.flatpickr-disabled {
   display: none;
 }
 .flatpickr-months .flatpickr-prev-month i,
@@ -370,6 +370,41 @@
   background: transparent;
   pointer-events: none;
 }
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  appearance: menulist;
+  background: #42a5f5;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  height: 22px;
+  line-height: inherit;
+  margin: -1px 0 0 0;
+  outline: none;
+  padding: 0 0 0 0.5ch;
+  position: relative;
+  vertical-align: initial;
+  -webkit-box-sizing: border-box;
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  width: auto;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months:focus,
+.flatpickr-current-month .flatpickr-monthDropdown-months:active {
+  outline: none;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months:hover {
+  background: rgba(0,0,0,0.05);
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
+  background-color: #42a5f5;
+  outline: none;
+  padding: 0;
+}
 .flatpickr-weekdays {
   background: #42a5f5;
   text-align: center;
@@ -561,8 +596,8 @@ span.flatpickr-weekday {
   -webkit-box-shadow: -5px 0 0 #e2e2e2, 5px 0 0 #e2e2e2;
           box-shadow: -5px 0 0 #e2e2e2, 5px 0 0 #e2e2e2;
 }
-.flatpickr-day.disabled,
-.flatpickr-day.disabled:hover,
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
 .flatpickr-day.prevMonthDay,
 .flatpickr-day.nextMonthDay,
 .flatpickr-day.notAllowed,
@@ -573,8 +608,8 @@ span.flatpickr-weekday {
   border-color: transparent;
   cursor: default;
 }
-.flatpickr-day.disabled,
-.flatpickr-day.disabled:hover {
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover {
   cursor: not-allowed;
   color: rgba(72,72,72,0.1);
 }
@@ -590,7 +625,6 @@ span.flatpickr-weekday {
   margin-top: 1px;
 }
 .flatpickr-weekwrapper {
-  display: inline-block;
   float: left;
 }
 .flatpickr-weekwrapper .flatpickr-weeks {
@@ -707,7 +741,6 @@ span.flatpickr-weekday {
 .flatpickr-time .flatpickr-time-separator,
 .flatpickr-time .flatpickr-am-pm {
   height: inherit;
-  display: inline-block;
   float: left;
   line-height: inherit;
   color: #484848;

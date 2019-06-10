@@ -69,11 +69,12 @@
       scrollTitle: "Scroll to increment",
       toggleTitle: "Click to toggle",
       amPM: ["AM", "PM"],
-      yearAriaLabel: "Year"
+      yearAriaLabel: "Year",
+      time_24hr: false
   };
 
-  exports.english = english;
   exports.default = english;
+  exports.english = english;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

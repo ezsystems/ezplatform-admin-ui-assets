@@ -59,7 +59,8 @@
       },
       ordinal: function () {
           return "-a";
-      }
+      },
+      time_24hr: true
   };
   fp.l10ns.eo = Esperanto;
   var eo = fp.l10ns;

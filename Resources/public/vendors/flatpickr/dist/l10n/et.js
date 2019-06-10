@@ -59,7 +59,8 @@
       weekAbbreviation: "Näd",
       rangeSeparator: " kuni ",
       scrollTitle: "Keri, et suurendada",
-      toggleTitle: "Klõpsa, et vahetada"
+      toggleTitle: "Klõpsa, et vahetada",
+      time_24hr: true
   };
   fp.l10ns.et = Estonian;
   var et = fp.l10ns;

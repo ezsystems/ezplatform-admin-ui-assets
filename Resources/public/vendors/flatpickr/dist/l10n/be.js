@@ -61,7 +61,8 @@
       scrollTitle: "Пракруціце для павелічэння",
       toggleTitle: "Націсніце для пераключэння",
       amPM: ["ДП", "ПП"],
-      yearAriaLabel: "Год"
+      yearAriaLabel: "Год",
+      time_24hr: true
   };
   fp.l10ns.be = Belarusian;
   var be = fp.l10ns;

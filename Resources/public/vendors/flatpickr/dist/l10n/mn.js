@@ -45,7 +45,8 @@
               "Арванхоёрдугаар сар",
           ]
       },
-      rangeSeparator: "-с "
+      rangeSeparator: "-с ",
+      time_24hr: true
   };
   fp.l10ns.mn = Mongolian;
   var mn = fp.l10ns;

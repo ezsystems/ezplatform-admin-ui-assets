@@ -52,7 +52,8 @@
               "Studeni",
               "Prosinac",
           ]
-      }
+      },
+      time_24hr: true
   };
   fp.l10ns.hr = Croatian;
   var hr = fp.l10ns;

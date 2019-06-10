@@ -30,8 +30,8 @@
               if (selDate !== undefined &&
                   selDate.getMonth() === fp.currentMonth &&
                   selDate.getFullYear() === fp.currentYear) {
-                  fp.weekStartDay = (fp.days.childNodes[7 * Math.floor(fp.selectedDateElem.$i / 7)]).dateObj;
-                  fp.weekEndDay = (fp.days.childNodes[7 * Math.ceil(fp.selectedDateElem.$i / 7 + 0.01) - 1]).dateObj;
+                  fp.weekStartDay = fp.days.childNodes[7 * Math.floor(fp.selectedDateElem.$i / 7)].dateObj;
+                  fp.weekEndDay = fp.days.childNodes[7 * Math.ceil(fp.selectedDateElem.$i / 7 + 0.01) - 1].dateObj;
               }
               var days = fp.days.childNodes;
               for (var i = days.length; i--;) {
@@ -69,7 +69,13 @@
                       ? fp.config.altFormat
                       : "\\W\\e\\e\\k #W, Y";
               },
-              onReady: [onReady, highlightWeek],
+              onReady: [
+                  onReady,
+                  highlightWeek,
+                  function () {
+                      fp.loadedPlugins.push("weekSelect");
+                  },
+              ],
               onDestroy: onDestroy
           };
       };

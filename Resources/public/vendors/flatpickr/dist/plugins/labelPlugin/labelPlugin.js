@@ -20,6 +20,7 @@
                       fp.input.removeAttribute("id");
                       fp.altInput.id = id;
                   }
+                  fp.loadedPlugins.push("labelPlugin");
               }
           };
       };

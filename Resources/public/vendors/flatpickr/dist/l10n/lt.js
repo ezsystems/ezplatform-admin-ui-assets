@@ -58,7 +58,8 @@
       },
       weekAbbreviation: "Sav",
       scrollTitle: "Keisti laiką pelės rateliu",
-      toggleTitle: "Perjungti laiko formatą"
+      toggleTitle: "Perjungti laiko formatą",
+      time_24hr: true
   };
   fp.l10ns.lt = Lithuanian;
   var lt = fp.l10ns;

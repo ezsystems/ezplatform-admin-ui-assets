@@ -39,6 +39,7 @@
     function confirmDatePlugin(pluginConfig) {
         var config = __assign({}, defaultConfig, pluginConfig);
         var confirmContainer;
+        var confirmButtonCSSClass = "flatpickr-confirm";
         return function (fp) {
             if (fp.config.noCalendar || fp.isMobile)
                 return {};
@@ -51,18 +52,27 @@
                         fp.close();
                 },
                 onReady: function () {
-                    confirmContainer = fp._createElement("div", "flatpickr-confirm " + (config.showAlways ? "visible" : "") + " " + config.theme + "Theme", config.confirmText);
+                    confirmContainer = fp._createElement("div", confirmButtonCSSClass + " " + (config.showAlways ? "visible" : "") + " " + config.theme + "Theme", config.confirmText);
                     confirmContainer.tabIndex = -1;
                     confirmContainer.innerHTML += config.confirmIcon;
                     confirmContainer.addEventListener("click", fp.close);
                     fp.calendarContainer.appendChild(confirmContainer);
+                    fp.loadedPlugins.push("confirmDate");
                 } }, (!config.showAlways
                 ? {
                     onChange: function (_, dateStr) {
-                        var showCondition = fp.config.enableTime || fp.config.mode === "multiple";
-                        if (dateStr && !fp.config.inline && showCondition)
-                            return confirmContainer.classList.add("visible");
-                        confirmContainer.classList.remove("visible");
+                        var showCondition = fp.config.enableTime ||
+                            fp.config.mode === "multiple" ||
+                            fp.loadedPlugins.indexOf("monthSelect") !== -1;
+                        var localConfirmContainer = fp.calendarContainer.querySelector("." + confirmButtonCSSClass);
+                        if (!localConfirmContainer)
+                            return;
+                        if (dateStr &&
+                            !fp.config.inline &&
+                            showCondition &&
+                            localConfirmContainer)
+                            return localConfirmContainer.classList.add("visible");
+                        localConfirmContainer.classList.remove("visible");
                     }
                 }
                 : {}));

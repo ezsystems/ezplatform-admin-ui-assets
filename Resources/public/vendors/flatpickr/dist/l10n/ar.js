@@ -38,7 +38,8 @@
               "نوفمبر",
               "ديسمبر",
           ]
-      }
+      },
+      rangeSeparator: ' - '
   };
   fp.l10ns.ar = Arabic;
   var ar = fp.l10ns;

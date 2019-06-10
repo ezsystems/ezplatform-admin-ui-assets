@@ -11,7 +11,7 @@
       };
   var Romanian = {
       weekdays: {
-          shorthand: ["Dum", "Lun", "Mar", "Mie", "Joi", "Vin", "Sam"],
+          shorthand: ["Dum", "Lun", "Mar", "Mie", "Joi", "Vin", "Sâm"],
           longhand: [
               "Duminică",
               "Luni",
@@ -53,6 +53,7 @@
           ]
       },
       firstDayOfWeek: 1,
+      time_24hr: true,
       ordinal: function () {
           return "";
       }

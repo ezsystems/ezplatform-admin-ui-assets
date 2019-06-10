@@ -52,7 +52,8 @@
               "Листопад",
               "Грудень",
           ]
-      }
+      },
+      time_24hr: true
   };
   fp.l10ns.uk = Ukrainian;
   var uk = fp.l10ns;

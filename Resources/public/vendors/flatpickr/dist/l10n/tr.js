@@ -60,7 +60,8 @@
       weekAbbreviation: "Hf",
       scrollTitle: "Artırmak için kaydırın",
       toggleTitle: "Aç/Kapa",
-      amPM: ["ÖÖ", "ÖS"]
+      amPM: ["ÖÖ", "ÖS"],
+      time_24hr: true
   };
   fp.l10ns.tr = Turkish;
   var tr = fp.l10ns;

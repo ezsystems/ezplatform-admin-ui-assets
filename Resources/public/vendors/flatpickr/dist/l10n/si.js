@@ -51,7 +51,8 @@
               "නොවැම්බර්",
               "දෙසැම්බර්",
           ]
-      }
+      },
+      time_24hr: true
   };
   fp.l10ns.si = Sinhala;
   var si = fp.l10ns;

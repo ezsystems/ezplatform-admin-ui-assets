@@ -7,15 +7,20 @@
   function rangePlugin(config) {
       if (config === void 0) { config = {}; }
       return function (fp) {
-          var dateFormat = "", secondInput, 
-          // @ts-ignore
-          _firstInputFocused, _secondInputFocused, _prevDates;
+          var dateFormat = "", secondInput, _secondInputFocused, _prevDates;
           var createSecondInput = function () {
               if (config.input) {
                   secondInput =
                       config.input instanceof Element
                           ? config.input
                           : window.document.querySelector(config.input);
+                  if (!secondInput) {
+                      fp.config.errorHandler(new Error("Invalid input element specified"));
+                      return;
+                  }
+                  if (fp.config.wrap) {
+                      secondInput = secondInput.querySelector("[data-input]");
+                  }
               }
               else {
                   secondInput = fp._input.cloneNode();
@@ -34,10 +39,9 @@
                       fp._setHoursFromDate(fp.selectedDates[1]);
                       fp.jumpToDate(fp.selectedDates[1]);
                   }
-                  _firstInputFocused = false;
                   _secondInputFocused = true;
                   fp.isOpen = false;
-                  fp.open(undefined, secondInput);
+                  fp.open(undefined, config.position === "left" ? fp._input : secondInput);
               });
               fp._bind(fp._input, ["focus", "click"], function (e) {
                   e.preventDefault();
@@ -73,10 +77,9 @@
                       secondInput.setAttribute("readonly", "readonly");
                   }
                   fp._bind(fp._input, "focus", function () {
-                      var _a;
                       fp.latestSelectedDateObj = fp.selectedDates[0];
                       fp._setHoursFromDate(fp.selectedDates[0]);
-                      _a = [true, false], _firstInputFocused = _a[0], _secondInputFocused = _a[1];
+                      _secondInputFocused = false;
                       fp.jumpToDate(fp.selectedDates[0]);
                   });
                   if (fp.config.allowInput)
@@ -86,6 +89,7 @@
                       });
                   fp.setDate(fp.selectedDates, false);
                   plugin.onValueUpdate(fp.selectedDates);
+                  fp.loadedPlugins.push("range");
               },
               onPreCalendarPosition: function () {
                   if (_secondInputFocused) {

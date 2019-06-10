@@ -54,9 +54,10 @@
       },
       rangeSeparator: " do ",
       weekAbbreviation: "tydz.",
-      scrollTitle: "Przwiń aby zwiększyć",
-      toggleTitle: "Kliknij aby przełączyć",
+      scrollTitle: "Przewiń, aby zwiększyć",
+      toggleTitle: "Kliknij, aby przełączyć",
       firstDayOfWeek: 1,
+      time_24hr: true,
       ordinal: function () {
           return ".";
       }

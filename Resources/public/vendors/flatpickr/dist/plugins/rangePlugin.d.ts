@@ -1,6 +1,7 @@
 import { Plugin } from "../types/options";
 export interface Config {
     input?: string | HTMLInputElement;
+    position?: "left";
 }
 declare global {
     interface Window {

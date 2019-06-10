@@ -69,7 +69,8 @@
                   return "è";
           }
       },
-      firstDayOfWeek: 1
+      firstDayOfWeek: 1,
+      time_24hr: true
   };
   fp.l10ns.cat = Catalan;
   var cat = fp.l10ns;

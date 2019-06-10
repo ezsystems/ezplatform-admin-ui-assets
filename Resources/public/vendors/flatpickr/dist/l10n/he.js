@@ -44,7 +44,8 @@
               "דצמבר",
           ]
       },
-      rangeSeparator: " אל "
+      rangeSeparator: " אל ",
+      time_24hr: true
   };
   fp.l10ns.he = Hebrew;
   var he = fp.l10ns;

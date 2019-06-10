@@ -56,7 +56,8 @@
       weekAbbreviation: "KW",
       rangeSeparator: " bis ",
       scrollTitle: "Zum Ändern scrollen",
-      toggleTitle: "Zum Umschalten klicken"
+      toggleTitle: "Zum Umschalten klicken",
+      time_24hr: true
   };
   fp.l10ns.de = German;
   var de = fp.l10ns;

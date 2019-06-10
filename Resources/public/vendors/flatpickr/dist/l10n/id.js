@@ -47,7 +47,9 @@
       firstDayOfWeek: 1,
       ordinal: function () {
           return "";
-      }
+      },
+      time_24hr: true,
+      rangeSeparator: ' - '
   };
   fp.l10ns.id = Indonesian;
   var id = fp.l10ns;

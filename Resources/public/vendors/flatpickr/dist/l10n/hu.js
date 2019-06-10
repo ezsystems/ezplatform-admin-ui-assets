@@ -59,7 +59,8 @@
       weekAbbreviation: "Hét",
       scrollTitle: "Görgessen",
       toggleTitle: "Kattintson a váltáshoz",
-      rangeSeparator: " - "
+      rangeSeparator: " - ",
+      time_24hr: true
   };
   fp.l10ns.hu = Hungarian;
   var hu = fp.l10ns;

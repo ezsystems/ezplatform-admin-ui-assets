@@ -61,7 +61,8 @@
       scrollTitle: "Прокрутите для увеличения",
       toggleTitle: "Нажмите для переключения",
       amPM: ["ДП", "ПП"],
-      yearAriaLabel: "Год"
+      yearAriaLabel: "Год",
+      time_24hr: true
   };
   fp.l10ns.ru = Russian;
   var ru = fp.l10ns;

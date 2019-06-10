@@ -54,7 +54,8 @@
       },
       firstDayOfWeek: 1,
       weekAbbreviation: "Нед.",
-      rangeSeparator: " до "
+      rangeSeparator: " до ",
+      time_24hr: true
   };
   fp.l10ns.mk = Macedonian;
   var mk = fp.l10ns;

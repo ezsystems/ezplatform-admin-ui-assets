@@ -54,7 +54,8 @@
       },
       ordinal: function () {
           return "일";
-      }
+      },
+      rangeSeparator: ' ~ '
   };
   fp.l10ns.ko = Korean;
   var ko = fp.l10ns;

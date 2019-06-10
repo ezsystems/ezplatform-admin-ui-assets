@@ -54,7 +54,8 @@
       },
       firstDayOfWeek: 1,
       weekAbbreviation: "Ned.",
-      rangeSeparator: " do "
+      rangeSeparator: " do ",
+      time_24hr: true
   };
   fp.l10ns.sr = Serbian;
   var sr = fp.l10ns;

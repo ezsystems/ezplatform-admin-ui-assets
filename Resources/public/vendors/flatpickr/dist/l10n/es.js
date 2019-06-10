@@ -56,7 +56,8 @@
           return "º";
       },
       firstDayOfWeek: 1,
-      rangeSeparator: " a "
+      rangeSeparator: " a ",
+      time_24hr: true
   };
   fp.l10ns.es = Spanish;
   var es = fp.l10ns;

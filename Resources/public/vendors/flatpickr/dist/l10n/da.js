@@ -57,7 +57,8 @@
       },
       firstDayOfWeek: 1,
       rangeSeparator: " til ",
-      weekAbbreviation: "uge"
+      weekAbbreviation: "uge",
+      time_24hr: true
   };
   fp.l10ns.da = Danish;
   var da = fp.l10ns;

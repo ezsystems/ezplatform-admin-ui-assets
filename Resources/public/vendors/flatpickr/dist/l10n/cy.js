@@ -79,7 +79,8 @@
               return "ain";
           // Inconclusive.
           return "";
-      }
+      },
+      time_24hr: true
   };
   fp.l10ns.cy = Welsh;
   var cy = fp.l10ns;

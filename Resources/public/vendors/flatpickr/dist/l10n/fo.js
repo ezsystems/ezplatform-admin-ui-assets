@@ -60,7 +60,8 @@
       weekAbbreviation: "vika",
       scrollTitle: "Rulla fyri at broyta",
       toggleTitle: "Trýst fyri at skifta",
-      yearAriaLabel: "Ár"
+      yearAriaLabel: "Ár",
+      time_24hr: true
   };
   fp.l10ns.fo = Faroese;
   var fo = fp.l10ns;

@@ -52,7 +52,8 @@
               "Tháng 12",
           ]
       },
-      firstDayOfWeek: 1
+      firstDayOfWeek: 1,
+      rangeSeparator: ' đến '
   };
   fp.l10ns.vn = Vietnamese;
   var vn = fp.l10ns;

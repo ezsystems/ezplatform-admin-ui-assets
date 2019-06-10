@@ -51,7 +51,9 @@
               "11月",
               "12月",
           ]
-      }
+      },
+      time_24hr: true,
+      rangeSeparator: ' から '
   };
   fp.l10ns.ja = Japanese;
   var ja = fp.l10ns;

@@ -58,7 +58,8 @@
       firstDayOfWeek: 1,
       rangeSeparator: " til ",
       weekAbbreviation: "vika",
-      yearAriaLabel: "Ár"
+      yearAriaLabel: "Ár",
+      time_24hr: true
   };
   fp.l10ns.is = Icelandic;
   var is = fp.l10ns;

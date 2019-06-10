@@ -53,7 +53,8 @@
               "Decembris",
           ]
       },
-      rangeSeparator: " līdz "
+      rangeSeparator: " līdz ",
+      time_24hr: true
   };
   fp.l10ns.lv = Latvian;
   var lv = fp.l10ns;

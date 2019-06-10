@@ -20,6 +20,7 @@ export interface Elements {
     weekWrapper?: HTMLDivElement;
     weekNumbers?: HTMLDivElement;
     monthNav: HTMLDivElement;
+    monthsDropdownContainer: HTMLSelectElement;
     yearElements: HTMLInputElement[];
     monthElements: HTMLSpanElement[];
     currentYearElement: HTMLInputElement;
@@ -33,6 +34,7 @@ export interface Elements {
     minuteElement?: HTMLInputElement;
     secondElement?: HTMLInputElement;
     amPM?: HTMLSpanElement;
+    pluginElements: Node[];
 }
 export interface Formatting {
     revFormat: RevFormat;
@@ -48,6 +50,7 @@ export declare type Instance = Elements & Formatting & {
     selectedDates: Date[];
     _initialDate: Date;
     config: ParsedOptions;
+    loadedPlugins: string[];
     l10n: Locale;
     currentYear: number;
     currentMonth: number;
@@ -57,13 +60,13 @@ export declare type Instance = Elements & Formatting & {
     maxDateHasTime: boolean;
     showTimeInput: boolean;
     _showTimeInput: boolean;
-    changeMonth: (value: number, is_offset?: boolean, from_keyboard?: boolean) => void;
+    changeMonth: (value: number, isOffset?: boolean, fromKeyboard?: boolean) => void;
     changeYear: (year: number) => void;
     clear: (emitChangeEvent?: boolean, toInitial?: boolean) => void;
     close: () => void;
     destroy: () => void;
     isEnabled: (date: DateOption, timeless?: boolean) => boolean;
-    jumpToDate: (date?: DateOption) => void;
+    jumpToDate: (date?: DateOption, triggerChange?: boolean) => void;
     open: (e?: FocusEvent | MouseEvent, positionElement?: HTMLElement) => void;
     redraw: () => void;
     set: (option: keyof Options | {
@@ -97,7 +100,7 @@ export interface FlatpickrFn {
     (selector: Node, config?: Options): Instance;
     (selector: ArrayLike<Node>, config?: Options): Instance[];
     (selector: string, config?: Options): Instance | Instance[];
-    defaultConfig: ParsedOptions;
+    defaultConfig: Partial<ParsedOptions>;
     l10ns: {
         [k in LocaleKey]?: CustomLocale;
     } & {

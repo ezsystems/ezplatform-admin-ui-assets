@@ -51,7 +51,8 @@
               "ਨਵੰਬਰ",
               "ਦਸੰਬਰ",
           ]
-      }
+      },
+      time_24hr: true
   };
   fp.l10ns.pa = Punjabi;
   var pa = fp.l10ns;

@@ -36,6 +36,7 @@
                   fp.monthElements.forEach(function (monthElem) {
                       return monthElem.addEventListener("wheel", monthScroller);
                   });
+                  fp.loadedPlugins.push("scroll");
               },
               onDestroy: function () {
                   if (fp.timeContainer) {

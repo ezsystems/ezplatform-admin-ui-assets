@@ -55,7 +55,8 @@
       },
       ordinal: function () {
           return ".";
-      }
+      },
+      time_24hr: true
   };
   fp.l10ns.fi = Finnish;
   var fi = fp.l10ns;

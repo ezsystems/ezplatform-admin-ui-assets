@@ -11,6 +11,7 @@ declare const _default: {
     be?: CustomLocale | undefined;
     bg?: CustomLocale | undefined;
     bn?: CustomLocale | undefined;
+    bs?: CustomLocale | undefined;
     cat?: CustomLocale | undefined;
     cs?: CustomLocale | undefined;
     cy?: CustomLocale | undefined;

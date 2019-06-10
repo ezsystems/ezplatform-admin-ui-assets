@@ -52,7 +52,8 @@
               "Dezembro",
           ]
       },
-      rangeSeparator: " até "
+      rangeSeparator: " até ",
+      time_24hr: true
   };
   fp.l10ns.pt = Portuguese;
   var pt = fp.l10ns;

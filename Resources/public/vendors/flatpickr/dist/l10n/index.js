@@ -64,7 +64,8 @@
                 "نوفمبر",
                 "ديسمبر",
             ]
-        }
+        },
+        rangeSeparator: ' - '
     };
     fp.l10ns.ar = Arabic;
     fp.l10ns;
@@ -182,7 +183,8 @@
         weekAbbreviation: "Hf",
         scrollTitle: "Artırmaq üçün sürüşdürün",
         toggleTitle: "Aç / Bağla",
-        amPM: ["GƏ", "GS"]
+        amPM: ["GƏ", "GS"],
+        time_24hr: true
     };
     fp$2.l10ns.az = Azerbaijan;
     fp$2.l10ns;
@@ -244,12 +246,67 @@
         scrollTitle: "Пракруціце для павелічэння",
         toggleTitle: "Націсніце для пераключэння",
         amPM: ["ДП", "ПП"],
-        yearAriaLabel: "Год"
+        yearAriaLabel: "Год",
+        time_24hr: true
     };
     fp$3.l10ns.be = Belarusian;
     fp$3.l10ns;
 
     var fp$4 = typeof window !== "undefined" && window.flatpickr !== undefined
+        ? window.flatpickr
+        : {
+            l10ns: {}
+        };
+    var Bosnian = {
+        firstDayOfWeek: 1,
+        weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
+            longhand: [
+                "Nedjelja",
+                "Ponedjeljak",
+                "Utorak",
+                "Srijeda",
+                "Četvrtak",
+                "Petak",
+                "Subota",
+            ]
+        },
+        months: {
+            shorthand: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Maj",
+                "Jun",
+                "Jul",
+                "Avg",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            longhand: [
+                "Januar",
+                "Februar",
+                "Mart",
+                "April",
+                "Maj",
+                "Juni",
+                "Juli",
+                "August",
+                "Septembar",
+                "Oktobar",
+                "Novembar",
+                "Decembar",
+            ]
+        },
+        time_24hr: true
+    };
+    fp$4.l10ns.bs = Bosnian;
+    fp$4.l10ns;
+
+    var fp$5 = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -296,12 +353,14 @@
                 "Ноември",
                 "Декември",
             ]
-        }
+        },
+        time_24hr: true,
+        firstDayOfWeek: 1
     };
-    fp$4.l10ns.bg = Bulgarian;
-    fp$4.l10ns;
+    fp$5.l10ns.bg = Bulgarian;
+    fp$5.l10ns;
 
-    var fp$5 = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$6 = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -350,10 +409,10 @@
             ]
         }
     };
-    fp$5.l10ns.bn = Bangla;
-    fp$5.l10ns;
+    fp$6.l10ns.bn = Bangla;
+    fp$6.l10ns;
 
-    var fp$6 = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$7 = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -418,12 +477,13 @@
                     return "è";
             }
         },
-        firstDayOfWeek: 1
+        firstDayOfWeek: 1,
+        time_24hr: true
     };
-    fp$6.l10ns.cat = Catalan;
-    fp$6.l10ns;
+    fp$7.l10ns.cat = Catalan;
+    fp$7.l10ns;
 
-    var fp$7 = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$8 = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -480,12 +540,13 @@
         scrollTitle: "Rolujte pro změnu",
         toggleTitle: "Přepnout dopoledne/odpoledne",
         amPM: ["dop.", "odp."],
-        yearAriaLabel: "Rok"
+        yearAriaLabel: "Rok",
+        time_24hr: true
     };
-    fp$7.l10ns.cs = Czech;
-    fp$7.l10ns;
+    fp$8.l10ns.cs = Czech;
+    fp$8.l10ns;
 
-    var fp$8 = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$9 = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -560,12 +621,13 @@
                 return "ain";
             // Inconclusive.
             return "";
-        }
+        },
+        time_24hr: true
     };
-    fp$8.l10ns.cy = Welsh;
-    fp$8.l10ns;
+    fp$9.l10ns.cy = Welsh;
+    fp$9.l10ns;
 
-    var fp$9 = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$a = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -618,12 +680,13 @@
         },
         firstDayOfWeek: 1,
         rangeSeparator: " til ",
-        weekAbbreviation: "uge"
+        weekAbbreviation: "uge",
+        time_24hr: true
     };
-    fp$9.l10ns.da = Danish;
-    fp$9.l10ns;
+    fp$a.l10ns.da = Danish;
+    fp$a.l10ns;
 
-    var fp$a = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$b = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -675,10 +738,11 @@
         weekAbbreviation: "KW",
         rangeSeparator: " bis ",
         scrollTitle: "Zum Ändern scrollen",
-        toggleTitle: "Zum Umschalten klicken"
+        toggleTitle: "Zum Umschalten klicken",
+        time_24hr: true
     };
-    fp$a.l10ns.de = German;
-    fp$a.l10ns;
+    fp$b.l10ns.de = German;
+    fp$b.l10ns;
 
     var english = {
         weekdays: {
@@ -745,10 +809,11 @@
         scrollTitle: "Scroll to increment",
         toggleTitle: "Click to toggle",
         amPM: ["AM", "PM"],
-        yearAriaLabel: "Year"
+        yearAriaLabel: "Year",
+        time_24hr: false
     };
 
-    var fp$b = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$c = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -803,12 +868,13 @@
         },
         ordinal: function () {
             return "-a";
-        }
+        },
+        time_24hr: true
     };
-    fp$b.l10ns.eo = Esperanto;
-    fp$b.l10ns;
+    fp$c.l10ns.eo = Esperanto;
+    fp$c.l10ns;
 
-    var fp$c = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$d = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -860,12 +926,13 @@
             return "º";
         },
         firstDayOfWeek: 1,
-        rangeSeparator: " a "
+        rangeSeparator: " a ",
+        time_24hr: true
     };
-    fp$c.l10ns.es = Spanish;
-    fp$c.l10ns;
+    fp$d.l10ns.es = Spanish;
+    fp$d.l10ns;
 
-    var fp$d = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$e = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -920,12 +987,13 @@
         weekAbbreviation: "Näd",
         rangeSeparator: " kuni ",
         scrollTitle: "Keri, et suurendada",
-        toggleTitle: "Klõpsa, et vahetada"
+        toggleTitle: "Klõpsa, et vahetada",
+        time_24hr: true
     };
-    fp$d.l10ns.et = Estonian;
-    fp$d.l10ns;
+    fp$e.l10ns.et = Estonian;
+    fp$e.l10ns;
 
-    var fp$e = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$f = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -978,10 +1046,10 @@
             return "";
         }
     };
-    fp$e.l10ns.fa = Persian;
-    fp$e.l10ns;
+    fp$f.l10ns.fa = Persian;
+    fp$f.l10ns;
 
-    var fp$f = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$g = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1032,12 +1100,13 @@
         },
         ordinal: function () {
             return ".";
-        }
+        },
+        time_24hr: true
     };
-    fp$f.l10ns.fi = Finnish;
-    fp$f.l10ns;
+    fp$g.l10ns.fi = Finnish;
+    fp$g.l10ns;
 
-    var fp$g = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$h = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1093,12 +1162,13 @@
         weekAbbreviation: "vika",
         scrollTitle: "Rulla fyri at broyta",
         toggleTitle: "Trýst fyri at skifta",
-        yearAriaLabel: "Ár"
+        yearAriaLabel: "Ár",
+        time_24hr: true
     };
-    fp$g.l10ns.fo = Faroese;
-    fp$g.l10ns;
+    fp$h.l10ns.fo = Faroese;
+    fp$h.l10ns;
 
-    var fp$h = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$i = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1155,12 +1225,13 @@
         rangeSeparator: " au ",
         weekAbbreviation: "Sem",
         scrollTitle: "Défiler pour augmenter la valeur",
-        toggleTitle: "Cliquer pour basculer"
+        toggleTitle: "Cliquer pour basculer",
+        time_24hr: true
     };
-    fp$h.l10ns.fr = French;
-    fp$h.l10ns;
+    fp$i.l10ns.fr = French;
+    fp$i.l10ns;
 
-    var fp$i = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$j = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1218,10 +1289,10 @@
         toggleTitle: "Κάντε κλικ για αλλαγή",
         amPM: ["ΠΜ", "ΜΜ"]
     };
-    fp$i.l10ns.gr = Greek;
-    fp$i.l10ns;
+    fp$j.l10ns.gr = Greek;
+    fp$j.l10ns;
 
-    var fp$j = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$k = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1261,12 +1332,13 @@
                 "דצמבר",
             ]
         },
-        rangeSeparator: " אל "
+        rangeSeparator: " אל ",
+        time_24hr: true
     };
-    fp$j.l10ns.he = Hebrew;
-    fp$j.l10ns;
+    fp$k.l10ns.he = Hebrew;
+    fp$k.l10ns;
 
-    var fp$k = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$l = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1315,10 +1387,10 @@
             ]
         }
     };
-    fp$k.l10ns.hi = Hindi;
-    fp$k.l10ns;
+    fp$l.l10ns.hi = Hindi;
+    fp$l.l10ns;
 
-    var fp$l = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$m = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1366,12 +1438,13 @@
                 "Studeni",
                 "Prosinac",
             ]
-        }
+        },
+        time_24hr: true
     };
-    fp$l.l10ns.hr = Croatian;
-    fp$l.l10ns;
+    fp$m.l10ns.hr = Croatian;
+    fp$m.l10ns;
 
-    var fp$m = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$n = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1426,12 +1499,13 @@
         weekAbbreviation: "Hét",
         scrollTitle: "Görgessen",
         toggleTitle: "Kattintson a váltáshoz",
-        rangeSeparator: " - "
+        rangeSeparator: " - ",
+        time_24hr: true
     };
-    fp$m.l10ns.hu = Hungarian;
-    fp$m.l10ns;
+    fp$n.l10ns.hu = Hungarian;
+    fp$n.l10ns;
 
-    var fp$n = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$o = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1474,12 +1548,14 @@
         firstDayOfWeek: 1,
         ordinal: function () {
             return "";
-        }
+        },
+        time_24hr: true,
+        rangeSeparator: ' - '
     };
-    fp$n.l10ns.id = Indonesian;
-    fp$n.l10ns;
+    fp$o.l10ns.id = Indonesian;
+    fp$o.l10ns;
 
-    var fp$o = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$p = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1533,12 +1609,13 @@
         firstDayOfWeek: 1,
         rangeSeparator: " til ",
         weekAbbreviation: "vika",
-        yearAriaLabel: "Ár"
+        yearAriaLabel: "Ár",
+        time_24hr: true
     };
-    fp$o.l10ns.is = Icelandic;
-    fp$o.l10ns;
+    fp$p.l10ns.is = Icelandic;
+    fp$p.l10ns;
 
-    var fp$p = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$q = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1591,12 +1668,13 @@
         rangeSeparator: " al ",
         weekAbbreviation: "Se",
         scrollTitle: "Scrolla per aumentare",
-        toggleTitle: "Clicca per cambiare"
+        toggleTitle: "Clicca per cambiare",
+        time_24hr: true
     };
-    fp$p.l10ns.it = Italian;
-    fp$p.l10ns;
+    fp$q.l10ns.it = Italian;
+    fp$q.l10ns;
 
-    var fp$q = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$r = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1643,12 +1721,14 @@
                 "11月",
                 "12月",
             ]
-        }
+        },
+        time_24hr: true,
+        rangeSeparator: ' から '
     };
-    fp$q.l10ns.ja = Japanese;
-    fp$q.l10ns;
+    fp$r.l10ns.ja = Japanese;
+    fp$r.l10ns;
 
-    var fp$r = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$s = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1698,12 +1778,13 @@
         },
         ordinal: function () {
             return "일";
-        }
+        },
+        rangeSeparator: ' ~ '
     };
-    fp$r.l10ns.ko = Korean;
-    fp$r.l10ns;
+    fp$s.l10ns.ko = Korean;
+    fp$s.l10ns;
 
-    var fp$s = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$t = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1759,12 +1840,13 @@
         weekAbbreviation: "សប្តាហ៍",
         scrollTitle: "រំកិលដើម្បីបង្កើន",
         toggleTitle: "ចុចដើម្បីផ្លាស់ប្ដូរ",
-        yearAriaLabel: "ឆ្នាំ"
+        yearAriaLabel: "ឆ្នាំ",
+        time_24hr: true
     };
-    fp$s.l10ns.km = Khmer;
-    fp$s.l10ns;
+    fp$t.l10ns.km = Khmer;
+    fp$t.l10ns;
 
-    var fp$t = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$u = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1823,10 +1905,10 @@
         amPM: ["ТД", "ТК"],
         yearAriaLabel: "Жыл"
     };
-    fp$t.l10ns.kz = Kazakh;
-    fp$t.l10ns;
+    fp$u.l10ns.kz = Kazakh;
+    fp$u.l10ns;
 
-    var fp$u = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$v = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1880,12 +1962,13 @@
         },
         weekAbbreviation: "Sav",
         scrollTitle: "Keisti laiką pelės rateliu",
-        toggleTitle: "Perjungti laiko formatą"
+        toggleTitle: "Perjungti laiko formatą",
+        time_24hr: true
     };
-    fp$u.l10ns.lt = Lithuanian;
-    fp$u.l10ns;
+    fp$v.l10ns.lt = Lithuanian;
+    fp$v.l10ns;
 
-    var fp$v = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$w = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1934,12 +2017,13 @@
                 "Decembris",
             ]
         },
-        rangeSeparator: " līdz "
+        rangeSeparator: " līdz ",
+        time_24hr: true
     };
-    fp$v.l10ns.lv = Latvian;
-    fp$v.l10ns;
+    fp$w.l10ns.lv = Latvian;
+    fp$w.l10ns;
 
-    var fp$w = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$x = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -1989,12 +2073,13 @@
         },
         firstDayOfWeek: 1,
         weekAbbreviation: "Нед.",
-        rangeSeparator: " до "
+        rangeSeparator: " до ",
+        time_24hr: true
     };
-    fp$w.l10ns.mk = Macedonian;
-    fp$w.l10ns;
+    fp$x.l10ns.mk = Macedonian;
+    fp$x.l10ns;
 
-    var fp$x = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$y = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2035,12 +2120,13 @@
                 "Арванхоёрдугаар сар",
             ]
         },
-        rangeSeparator: "-с "
+        rangeSeparator: "-с ",
+        time_24hr: true
     };
-    fp$x.l10ns.mn = Mongolian;
-    fp$x.l10ns;
+    fp$y.l10ns.mn = Mongolian;
+    fp$y.l10ns;
 
-    var fp$y = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$z = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2093,9 +2179,9 @@
             return "";
         }
     };
-    fp$y.l10ns;
+    fp$z.l10ns;
 
-    var fp$z = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$A = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2146,12 +2232,13 @@
         firstDayOfWeek: 1,
         ordinal: function () {
             return "";
-        }
+        },
+        time_24hr: true
     };
-    fp$z.l10ns.my = Burmese;
-    fp$z.l10ns;
+    fp$A.l10ns.my = Burmese;
+    fp$A.l10ns;
 
-    var fp$A = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$B = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2204,16 +2291,17 @@
         rangeSeparator: " tot ",
         scrollTitle: "Scroll voor volgende / vorige",
         toggleTitle: "Klik om te wisselen",
+        time_24hr: true,
         ordinal: function (nth) {
             if (nth === 1 || nth === 8 || nth >= 20)
                 return "ste";
             return "de";
         }
     };
-    fp$A.l10ns.nl = Dutch;
-    fp$A.l10ns;
+    fp$B.l10ns.nl = Dutch;
+    fp$B.l10ns;
 
-    var fp$B = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$C = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2266,14 +2354,15 @@
         weekAbbreviation: "Uke",
         scrollTitle: "Scroll for å endre",
         toggleTitle: "Klikk for å veksle",
+        time_24hr: true,
         ordinal: function () {
             return ".";
         }
     };
-    fp$B.l10ns.no = Norwegian;
-    fp$B.l10ns;
+    fp$C.l10ns.no = Norwegian;
+    fp$C.l10ns;
 
-    var fp$C = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$D = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2320,12 +2409,13 @@
                 "ਨਵੰਬਰ",
                 "ਦਸੰਬਰ",
             ]
-        }
+        },
+        time_24hr: true
     };
-    fp$C.l10ns.pa = Punjabi;
-    fp$C.l10ns;
+    fp$D.l10ns.pa = Punjabi;
+    fp$D.l10ns;
 
-    var fp$D = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$E = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2375,17 +2465,18 @@
         },
         rangeSeparator: " do ",
         weekAbbreviation: "tydz.",
-        scrollTitle: "Przwiń aby zwiększyć",
-        toggleTitle: "Kliknij aby przełączyć",
+        scrollTitle: "Przewiń, aby zwiększyć",
+        toggleTitle: "Kliknij, aby przełączyć",
         firstDayOfWeek: 1,
+        time_24hr: true,
         ordinal: function () {
             return ".";
         }
     };
-    fp$D.l10ns.pl = Polish;
-    fp$D.l10ns;
+    fp$E.l10ns.pl = Polish;
+    fp$E.l10ns;
 
-    var fp$E = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$F = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2433,19 +2524,20 @@
                 "Dezembro",
             ]
         },
-        rangeSeparator: " até "
+        rangeSeparator: " até ",
+        time_24hr: true
     };
-    fp$E.l10ns.pt = Portuguese;
-    fp$E.l10ns;
+    fp$F.l10ns.pt = Portuguese;
+    fp$F.l10ns;
 
-    var fp$F = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$G = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
         };
     var Romanian = {
         weekdays: {
-            shorthand: ["Dum", "Lun", "Mar", "Mie", "Joi", "Vin", "Sam"],
+            shorthand: ["Dum", "Lun", "Mar", "Mie", "Joi", "Vin", "Sâm"],
             longhand: [
                 "Duminică",
                 "Luni",
@@ -2487,14 +2579,15 @@
             ]
         },
         firstDayOfWeek: 1,
+        time_24hr: true,
         ordinal: function () {
             return "";
         }
     };
-    fp$F.l10ns.ro = Romanian;
-    fp$F.l10ns;
+    fp$G.l10ns.ro = Romanian;
+    fp$G.l10ns;
 
-    var fp$G = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$H = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2551,12 +2644,13 @@
         scrollTitle: "Прокрутите для увеличения",
         toggleTitle: "Нажмите для переключения",
         amPM: ["ДП", "ПП"],
-        yearAriaLabel: "Год"
+        yearAriaLabel: "Год",
+        time_24hr: true
     };
-    fp$G.l10ns.ru = Russian;
-    fp$G.l10ns;
+    fp$H.l10ns.ru = Russian;
+    fp$H.l10ns;
 
-    var fp$H = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$I = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2603,12 +2697,13 @@
                 "නොවැම්බර්",
                 "දෙසැම්බර්",
             ]
-        }
+        },
+        time_24hr: true
     };
-    fp$H.l10ns.si = Sinhala;
-    fp$H.l10ns;
+    fp$I.l10ns.si = Sinhala;
+    fp$I.l10ns;
 
-    var fp$I = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$J = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2658,14 +2753,15 @@
         },
         firstDayOfWeek: 1,
         rangeSeparator: " do ",
+        time_24hr: true,
         ordinal: function () {
             return ".";
         }
     };
-    fp$I.l10ns.sk = Slovak;
-    fp$I.l10ns;
+    fp$J.l10ns.sk = Slovak;
+    fp$J.l10ns;
 
-    var fp$J = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$K = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2715,14 +2811,15 @@
         },
         firstDayOfWeek: 1,
         rangeSeparator: " do ",
+        time_24hr: true,
         ordinal: function () {
             return ".";
         }
     };
-    fp$J.l10ns.sl = Slovenian;
-    fp$J.l10ns;
+    fp$K.l10ns.sl = Slovenian;
+    fp$K.l10ns;
 
-    var fp$K = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$L = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2769,12 +2866,13 @@
                 "Nëntor",
                 "Dhjetor",
             ]
-        }
+        },
+        time_24hr: true
     };
-    fp$K.l10ns.sq = Albanian;
-    fp$K.l10ns;
+    fp$L.l10ns.sq = Albanian;
+    fp$L.l10ns;
 
-    var fp$L = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$M = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2824,12 +2922,13 @@
         },
         firstDayOfWeek: 1,
         weekAbbreviation: "Ned.",
-        rangeSeparator: " do "
+        rangeSeparator: " do ",
+        time_24hr: true
     };
-    fp$L.l10ns.sr = Serbian;
-    fp$L.l10ns;
+    fp$M.l10ns.sr = Serbian;
+    fp$M.l10ns;
 
-    var fp$M = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$N = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2879,14 +2978,15 @@
                 "December",
             ]
         },
+        time_24hr: true,
         ordinal: function () {
             return ".";
         }
     };
-    fp$M.l10ns.sv = Swedish;
-    fp$M.l10ns;
+    fp$N.l10ns.sv = Swedish;
+    fp$N.l10ns;
 
-    var fp$N = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$O = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -2938,14 +3038,15 @@
         rangeSeparator: " ถึง ",
         scrollTitle: "เลื่อนเพื่อเพิ่มหรือลด",
         toggleTitle: "คลิกเพื่อเปลี่ยน",
+        time_24hr: true,
         ordinal: function () {
             return "";
         }
     };
-    fp$N.l10ns.th = Thai;
-    fp$N.l10ns;
+    fp$O.l10ns.th = Thai;
+    fp$O.l10ns;
 
-    var fp$O = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$P = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -3001,12 +3102,13 @@
         weekAbbreviation: "Hf",
         scrollTitle: "Artırmak için kaydırın",
         toggleTitle: "Aç/Kapa",
-        amPM: ["ÖÖ", "ÖS"]
+        amPM: ["ÖÖ", "ÖS"],
+        time_24hr: true
     };
-    fp$O.l10ns.tr = Turkish;
-    fp$O.l10ns;
+    fp$P.l10ns.tr = Turkish;
+    fp$P.l10ns;
 
-    var fp$P = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$Q = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -3054,12 +3156,13 @@
                 "Листопад",
                 "Грудень",
             ]
-        }
+        },
+        time_24hr: true
     };
-    fp$P.l10ns.uk = Ukrainian;
-    fp$P.l10ns;
+    fp$Q.l10ns.uk = Ukrainian;
+    fp$Q.l10ns;
 
-    var fp$Q = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$R = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -3107,12 +3210,13 @@
                 "Tháng 12",
             ]
         },
-        firstDayOfWeek: 1
+        firstDayOfWeek: 1,
+        rangeSeparator: ' đến '
     };
-    fp$Q.l10ns.vn = Vietnamese;
-    fp$Q.l10ns;
+    fp$R.l10ns.vn = Vietnamese;
+    fp$R.l10ns;
 
-    var fp$R = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$S = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -3165,10 +3269,10 @@
         scrollTitle: "滚动切换",
         toggleTitle: "点击切换 12/24 小时时制"
     };
-    fp$R.l10ns.zh = Mandarin;
-    fp$R.l10ns;
+    fp$S.l10ns.zh = Mandarin;
+    fp$S.l10ns;
 
-    var fp$S = typeof window !== "undefined" && window.flatpickr !== undefined
+    var fp$T = typeof window !== "undefined" && window.flatpickr !== undefined
         ? window.flatpickr
         : {
             l10ns: {}
@@ -3221,8 +3325,8 @@
         scrollTitle: "滾動切換",
         toggleTitle: "點擊切換 12/24 小時時制"
     };
-    fp$S.l10ns.zh_tw = MandarinTraditional;
-    fp$S.l10ns;
+    fp$T.l10ns.zh_tw = MandarinTraditional;
+    fp$T.l10ns;
 
     var l10n = {
         ar: Arabic,
@@ -3231,6 +3335,7 @@
         be: Belarusian,
         bg: Bulgarian,
         bn: Bangla,
+        bs: Bosnian,
         cat: Catalan,
         cs: Czech,
         cy: Welsh,

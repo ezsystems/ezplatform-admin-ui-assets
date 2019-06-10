@@ -51,7 +51,9 @@
               "Ноември",
               "Декември",
           ]
-      }
+      },
+      time_24hr: true,
+      firstDayOfWeek: 1
   };
   fp.l10ns.bg = Bulgarian;
   var bg = fp.l10ns;
