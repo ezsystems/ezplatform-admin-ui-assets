@@ -9,6 +9,7 @@
     }
   ],
   "require": {
+    "php": "^7.3",
     "symfony/http-kernel": "^4.3"
   },
   "autoload": {
