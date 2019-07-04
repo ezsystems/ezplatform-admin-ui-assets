@@ -9,14 +9,17 @@ print_usage()
     echo "This script MUST be run from the bundle root directory. It will create"
     echo "a tag but this tag will NOT be pushed"
     echo ""
-    echo "Usage: $1 -v <version>"
-    echo "-v version : where version will be used to create the tag"
+    echo "Usage: $1 -v <version> -b <branch>"
+    echo "-v : where version will be used to create the tag"
+    echo "-b : branch which will be used to create the tag"
 }
 
 VERSION=""
-while getopts "hv:" opt ; do
+BRANCH=""
+while getopts ":h:v:b:" opt ; do
     case $opt in
         v ) VERSION=$OPTARG ;;
+        b ) BRANCH=$OPTARG ;;
         h ) print_usage "$0"
             exit 0 ;;
         * ) print_usage "$0"
@@ -24,6 +27,7 @@ while getopts "hv:" opt ; do
     esac
 done
 
+[ -z "$BRANCH" ] && print_usage "$0" && exit 2
 [ -z "$VERSION" ] && print_usage "$0" && exit 2
 
 check_command()
@@ -72,9 +76,9 @@ CURRENT_BRANCH=`git branch | grep '*' | cut -d ' ' -f 2`
 TMP_BRANCH="version_$VERSION"
 TAG="v$VERSION"
 
-echo "# Switching to master and updating"
-git checkout -q master > /dev/null && git pull > /dev/null
-check_process "switch to master"
+echo "# Switching to $BRANCH and updating"
+git checkout -q $BRANCH > /dev/null && git pull > /dev/null
+check_process "switch to $BRANCH"
 
 echo "# Removing the assets"
 [ ! -d "$VENDOR_DIR" ] && mkdir -p $VENDOR_DIR
