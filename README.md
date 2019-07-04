@@ -10,7 +10,11 @@
 To prepare a tag for release you have to run the following command from the root directory of the bundle:
 
 ```
-sh bin/prepare_release.sh -v 1.0.0
+sh bin/prepare_release.sh -v 1.0.0 -b master
 ```
 
-The `1.0.0` stands for a version tag number that will be released.
+Options:
+1. -v : tag that will be released
+1. -b : branch which will be used to create the tag
+
+If you are tagging for eZPlatform 2.5.x LTS you should use the 4.x branch.
