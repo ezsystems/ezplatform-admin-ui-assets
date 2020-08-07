@@ -1,0 +1,2 @@
+This is a customized ReactDOM version.
+To decrease the size of the bundle, it includes production-only files
