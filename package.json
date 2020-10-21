@@ -17,7 +17,8 @@
         "move-moment-timezone": "cp -r node_modules/moment-timezone Resources/public/vendors/moment-timezone",
         "move-d3": "cp -r node_modules/d3 Resources/public/vendors/d3",
         "move-dagre-d3": "cp -r node_modules/dagre-d3 Resources/public/vendors/dagre-d3",
-        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types; npm run move-moment; npm run move-moment-timezone; npm run move-d3; npm run move-dagre-d3"
+        "move-steamlineicons": "cp -r src/vendor/webanalys Resources/public/vendors/webanalys",
+        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types; npm run move-moment; npm run move-moment-timezone; npm run move-d3; npm run move-dagre-d3; npm run move-steamlineicons"
     },
     "repository": {
         "type": "git",
