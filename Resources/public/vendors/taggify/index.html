@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taggify</title>
+    <!-- <link rel="stylesheet" href="src/css/styles.css"> -->
+</head>
+<body>
+    <h1>Taggify</h1>
+    <div class="taggify"></div>
+    <div class="taggify__list"></div>
+    <script src="src/js/taggify.js"></script>
+    <script>
+    (function () {
+        'use strict';
+
+        var SELECTOR_LIST = '.taggify__list',
+            list = document.querySelector(SELECTOR_LIST),
+            onClickCreateTag = function () {},
+            displayList = function (xhttp) {
+                var response,
+                    fragment;
+
+                if (xhttp.readyState !== XMLHttpRequest.DONE || xhttp.status !== 200) {
+                    return;
+                }
+
+                response = JSON.parse(xhttp.responseText);
+                fragment = document.createDocumentFragment();
+                list.innerHTML = '';
+
+                response.forEach(function (item) {
+                    var itemNode = document.createElement('div');
+
+                    itemNode.classList.add('taggify__list-item');
+                    itemNode.dataset.itemId = item.id;
+                    itemNode.innerHTML = item.label;
+
+                    fragment.appendChild(itemNode);
+                });
+
+                list.appendChild(fragment);
+            },
+            autocompleteDemoCallback = function (value, callback) {
+                var xhttp = new XMLHttpRequest(),
+                    resultsList = document.querySelector(SELECTOR_LIST),
+                    clonedList = resultsList.cloneNode(true);
+
+                value = value.split(',').map(function (tag) { return tag.trim(); });
+                value = value[value.length - 1];
+
+                onClickCreateTag = function (callback, event) {
+                    callback([{
+                        id: event.target.dataset.itemId,
+                        label: event.target.innerHTML
+                    }]);
+
+                    list.innerHTML = '';
+                };
+
+                resultsList.parentNode.replaceChild(clonedList, resultsList);
+                list = clonedList;
+                list.addEventListener('click', onClickCreateTag.bind(null, callback), false);
+
+                xhttp.onreadystatechange = displayList.bind(null, xhttp, callback);
+                xhttp.open('GET', 'http://localhost:3000/users?q=' + value, true);
+                xhttp.send();
+            };
+
+        new window.Taggify({
+            autocomplete: false,
+            autocompleteCallback: autocompleteDemoCallback
+        });
+    })();
+    </script>
+</body>
+</html>
