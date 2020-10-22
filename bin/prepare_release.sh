@@ -179,6 +179,10 @@ check_process "clean dagre-d3"
 echo "This is a customized dagre-d3 version." > $DAGRE_D3_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $DAGRE_D3_NOTICE
 
+echo "# Removing moved files from src"
+rm -rf "src"
+check_process "clean src"
+
 echo "# Creating the custom branch: $TMP_BRANCH"
 git checkout -q -b "$TMP_BRANCH" > /dev/null
 check_process "create the branch '$TMP_BRANCH'"
