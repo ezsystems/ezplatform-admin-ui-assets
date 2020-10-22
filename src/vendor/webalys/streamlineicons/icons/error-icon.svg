@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="112px" height="110px" viewBox="0 0 112 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 3</title>
-    <defs>
-        <filter id="filter-1">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.858824 0 0 0 0 0.000000 0 0 0 0 0.196078 0 0 0 1.000000 0"></feColorMatrix>
-        </filter>
-        <linearGradient x1="103.271314%" y1="-14.3355032%" x2="35.1816857%" y2="65.4601583%" id="linearGradient-2">
-            <stop stop-color="#E9551D" offset="0%"></stop>
-            <stop stop-color="#E61850" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Welcome-Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Welcome_screen" transform="translate(-891.000000, -218.000000)">
-            <g id="Group-3" transform="translate(897.000000, 221.000000)">
-                <g filter="url(#filter-1)" id="Group" stroke-linecap="round" stroke-linejoin="round">
-                    <g transform="translate(33.000000, 0.000000)" id="file-copyright-r" stroke-width="5">
-                        <path d="M32.9684211,84.6 L65.9368421,84.6 C67.9599483,84.6 69.6,82.9531865 69.6,80.9217391 L69.6,21.9776087 C69.6,9.83971058 59.8006914,0 47.7126316,0 L3.66315789,0 C1.64005165,0 0,1.64681349 0,3.67826087 L0,29.426087" id="Shape" stroke="url(#linearGradient-2)"></path>
-                        <path d="M51.2842105,0.29426087 L51.2842105,14.7130435 C51.2842105,16.7444909 52.9242622,18.3913043 54.9473684,18.3913043 L69.3069474,18.3913043" id="Shape" stroke="#000000"></path>
-                    </g>
+    <g id="Welcome-Screen-_x2F_-404">
+        <g id="_x34_04-error-screen" transform="translate(-891.000000, -218.000000)">
+            <g id="Group-3" transform="translate(891.000000, 221.000000)">
+                <g id="Group">
                 </g>
-                <path d="M29.5,36.4098301 L63.045085,103.5 L-4.04508497,103.5 L29.5,36.4098301 Z" id="Triangle" stroke="#AE1164" stroke-width="5" fill="#FFFFFF" stroke-linejoin="round"></path>
-                <text id="!" font-family="NewPeninimMT, New Peninim MT" font-size="36.6" font-weight="normal" fill="#AE1164">
-                    <tspan x="24.8807129" y="89">!</tspan>
-                </text>
             </g>
         </g>
     </g>
+    <linearGradient id="Shape_2_" gradientUnits="userSpaceOnUse" x1="-861.2433" y1="633.2122" x2="-861.9407" y2="632.4142" gradientTransform="matrix(74.6 0 0 -89.6 64362.8984 56723.3008)">
+        <stop  offset="0" style="stop-color:#DB0032"/>
+        <stop  offset="1" style="stop-color:#E61850"/>
+    </linearGradient>
+    <path id="Shape" class="st0" d="M85.7-0.4c13.3,0,24.2,10.7,24.4,24.1l0,0.4V83c0,3.3-2.6,6.1-5.9,6.2l-0.2,0h-33
+        c-1.4,0-2.5-1.1-2.5-2.5c0-1.3,1-2.4,2.3-2.5l0.2,0h33c0.6,0,1.1-0.5,1.2-1l0-0.1V24.1c0-10.6-8.5-19.3-19-19.5l-0.3,0h-44
+        c-0.6,0-1.1,0.5-1.2,1l0,0.1v25.7c0,1.4-1.1,2.5-2.5,2.5c-1.3,0-2.4-1-2.5-2.3l0-0.2V5.8c0-3.3,2.6-6.1,5.9-6.2l0.2,0H85.7z"/>
+    <path id="Shape_1_" class="st1" d="M89.2-0.1c1.3,0,2.4,1,2.5,2.3l0,0.2v14.4c0,0.6,0.5,1.1,1,1.2l0.1,0h14.4c1.4,0,2.5,1.1,2.5,2.5
+        c0,1.3-1,2.4-2.3,2.5l-0.2,0H92.9c-3.3,0-6-2.6-6.2-6l0-0.2V2.4C86.7,1,87.8-0.1,89.2-0.1z"/>
+    <path id="Triangle" class="st2" d="M30,41.9l-29.5,59c-1.7,3.3,0.8,7.2,4.5,7.2h59c3.7,0,6.1-3.9,4.5-7.2l-29.5-59
+        C37.1,38.2,31.8,38.2,30,41.9z M34.4,44.1l29.5,59h-59L34.4,44.1z"/>
+    <path id="_x21_" class="st2" d="M34.3,85.5l1.1-8.5c0.3-2.4,0.5-3.8,0.5-4.2c0-0.6-0.2-1.2-0.5-1.7c-0.3-0.5-0.8-0.7-1.4-0.7
+        c-0.6,0-1.1,0.2-1.5,0.7c-0.4,0.4-0.5,1-0.5,1.7c0,0.5,0.2,2.2,0.6,5.1l0,0l1,7.6H34.3z M33.9,91.5c0.4,0,0.7-0.1,1-0.3
+        c0.3-0.2,0.5-0.4,0.7-0.7c0.2-0.3,0.3-0.6,0.3-1s-0.1-0.7-0.3-1c-0.2-0.3-0.4-0.5-0.7-0.7s-0.6-0.3-1-0.3c-0.5,0-1,0.2-1.4,0.6
+        C32.2,88.5,32,89,32,89.5c0,0.6,0.2,1.1,0.6,1.5C33,91.3,33.5,91.5,33.9,91.5z"/>
 </svg>
