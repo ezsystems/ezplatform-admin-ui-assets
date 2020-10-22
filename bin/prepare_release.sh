@@ -189,6 +189,7 @@ check_process "create the branch '$TMP_BRANCH'"
 
 echo "# Commiting"
 git add Resources > /dev/null
+git add src > /dev/null
 git commit -q -m "Version $VERSION"
 check_process "commit the assets"
 
