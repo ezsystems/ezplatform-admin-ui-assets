@@ -1,160 +1,127 @@
-It is prohibited to download, repurpose and distribute graphic assets
-such as icons used in our software as they are licensed under specific
-terms. For more information, please refer to Streamline Icons Premium
-License terms described below. In these license terms, Ibexa AS
-represents "you".
+**Icon License agreement**
 
-## **Streamline Icons Premium License (DATED: 21.10.2020)**
+This license agreement is between Ibexa AS (Norwegian business
+registration no. 981 601 564), a Norwegian company ("**Licensor**" or
+"**Ibexa**") and the user ("**Licensee**" or "**you**").
 
-When you buy our Premium pack (Ultimate pack, Essential Pack), you own a
-royalty free license that allows you to use our icons in an unlimited
-number of projects without crediting us, and give you access to all
-vectors sources and features of our Streamline application.
+This license agreement is accepted by you by your download or use of
+Ibexa DXP ("**Software**") licensed under GNU General Public License v.
+2 ("**GPL**") and covers your use of the icons from Webalys LLC, New
+Hampshire, USA, used in the graphical user interface of the Software.
+Use of these icons are not covered by the GPL.
 
-This is a legal agreement between you, the Customer, and the Licensor
-Webalys LLC.
+Definitions
+===========
 
-Webalys LLC is the company that has created the Streamline Icons for
-personal and commercial use. In exchange for the purchase, Webalys LLC
-grants the Customer a license under the copyrights to use Streamline
-Icons as described below. Purchasing the Streamline icons set
-constitutes your acceptance of the terms of this agreement.
+"Icons" means the symbols or graphic representation displayed on a
+screen of graphical icons used for user experience and navigation
+purposes in the user interface of the Software.
 
-## **1- You can use the Streamline Icons for:**
+"Software License Agreement" or "GPL" means the separate license
+agreement entered into between the parties for your use of the Software
+(not the Icons).
 
-✅ An unlimited number of commercial or personal projects.
+Duration
+========
 
-✅ An unlimited number of users for the applications, websites, software
-you will build using the Streamline icons , as long as you use less than
-100 icons per project.
+The duration of this license agreement corresponds to the duration of
+the Software License Agreement.
 
-✅ Any type of projects: templates, website design, application design...
-even logos!
+License grant
+=============
 
-✅ For yourself or on behalf of a client. You can use Streamline for an
-unlimited number of clients, as long as you use less than 100 icons per
-project.
+You may
+-------
 
-✅ Up to 5 licensed users in your company/organization can access our
-Streamline Application or all the vector sources that you download after
-the purchase. By \"licensed users\" we mean employees who get access to
-the full pack sources and Streamline application to use all icons.
+Licensor grants you a limited, non-exclusive, time-limited and
+non-transferable right to install and use the Icons together with the
+Software. Hereunder you may:
 
-These licensed users can prepare a selection of icons, up to 100,
-forwarded to other employees. Other employees using this icon selection,
-like developers or designers, are not considered as licensed users, so
-there is no limitations on their number.
+(a) modify and distribute the Software as stipulated in the GPL, and
 
-## **2- Licenses limitations**
+(b) replace any Icons (but not modify the Icons).
 
-There is two main limitations to the Standard Streamline Icons license,
-that can be removed by the extended licenses:
+You may not
+-----------
 
-❌ You cannot use more than 100 icons per project, website or
-application.
+You may use the Icons only as expressly granted in section 3.1.
 
-❌ You cannot have more than 5 licensed users in your organization or
-company getting access to the Streamline Application or the vector
-sources.
+Without limiting the foregoing, Licensee may not:
 
-## **3- Customers are allowed to:**
+(a) make enhancements or other modifications to the Icons;
 
--   Use the Streamline icons in perpetuity. There is no time limitation
-    and no renewal fees needed.
--   Use the icons in any location. There is no geographical limitations.
--   Store the icons sources on computers or shared digital storage (for
-    example intranet, Dropbox, digital asset management) as long as only
-    the licensed users access it.
--   Modify icons in shape, size, color, and/or file/format.
--   Embed up to 100 icons per project (for example in a website, a
-    Powerpoint presentation template, a graphic template). An icon
-    embedded in different weights (for example Light, Regular, Bold)
-    count only as one, so if you embed 50 icons in three weights, it
-    count only a 50 icons (and note as 150 icons).
--   Include icons in templates or work intended to be reproduced by
-    third party (for example in a web design template, Powerpoint
-    template), as long as you don\'t include more than 100 icons.
--   Embed icons as vector files, and in any file type (for example SVG,
-    PNG, Figma or Sketch files)
--   Use in open source projects, as long as you use a maximum of 100
-    Streamline Icons and make clear in your license that these icons are
-    still the property of Webalys LLC and can be used only in the
-    context of the open source project.
--   Incorporate icon into a logo or other trademark.
--   Place icon on physical items for resale or on any similar mass
-    produced item, as long as the icon is not the main value of this
-    product. The icon has to be part of a unique and creative design,
-    and not the only graphic element that gives the visual value to the
-    product.
--   Transfer the license to a new owner. For example you can transfer
-    the license from a design agency to a customer after the artwork is
-    created and hand over all icon sources and license to the customer,
-    or transfer the license from a company to another company that
-    bought/acquire it.If you transfer the license to another company or
-    organization, you cannot use the Streamline icons anymore, unless
-    you buy a new license.
+(b) give, lease, relicense, sell, make available or distribute the Icons
+    *separately* to any third party;
 
-## **4- Customers are not allowed to:**
+(c) copy the Icons separate from the Software onto any public or
+    distributed network; or
 
--   Sell or redistribute our icons or icon set.
--   Modify their original design/artwork so as to render them
-    unrecognizable from their original state with the goal to resell
-    them.
+(d) change any rights notices which appear in or with the Icons,
+    including in file(s) the Icons are located.
 
-## **5- Extended Employees License**
+Price
+=====
 
-Buying this license remove the limitation of 5 users in your
-organization or company that can use the Streamline Icons. After
-purchase, you will be allowed to have more users working with the
-Streamline Icons pack, up to the number defined in the license that you
-have bought.
+You may use the Icons free of charge, subject to the terms of this Icon
+License Agreement.
 
-## **6- Extended Icons License **
+Termination
+===========
 
-Buying this license remove the limitation of 100 icons per
-project/website/application. After purchase, you will be allowed to use
-more icons in your projects, up to the number defined in the license
-that you have bought. This license is not available for use in templates
-that you resell. You must contact Webalys LLC to buy this extended
-license.
+Licensor may terminate this license immediately if you are in breach any
+of its provisions and such breach remains uncured 14 days after receipt
+of notice. In the event that you are or becomes liquidated, dissolved,
+bankrupt or insolvent, whether voluntarily or involuntarily, or is to
+take any action to be so declared, Licensor may terminate this license
+immediately.
 
-## **7- General Contract terms**
+Intellectual property rights
+============================
 
-### Government law -- Jurisdiction
+Licensee agrees that the copyright and all other intellectual property
+and proprietary rights of whatever nature in the Icons are not by this
+license transferred to you.
 
-This agreement is governed by the laws of the United States and the New
-Hampshire -- USA, without regard to conflicts of laws principles. The
-federal and state courts located in New Hampshire shall have exclusive
-jurisdiction over any disputes arising from or relating to this
-agreement, and each party consents to such jurisdiction and venue.
+Disclaimer of warranties
+========================
 
-### Enforcement
+The Icons are licensed "as is," without any warranties whatsoever.
+Licensor expressly disclaims, and licensee expressly waives, all
+warranties, whether express or implied, including warranties of
+merchantability, fitness for a particular purpose, non-infringement,
+system integration, non-interference and accuracy of informational
+content. Licensor does not warrant that the Icons will meet licensee\'s
+requirements or that the operation of the Icons will be uninterrupted or
+error-free, or that errors will be corrected. The entire risk of the
+Icons' quality and performance is with licensee.
 
-If the Licensor discovers reason to believe the Customer or any of their
-Users has breached this agreement, the Licensor may terminate this
-agreement, restrict the Licensor\'s ability to download the Streamline
-icons or use the Streamline application. The Licensor will send notice
-to the e-mail address the Customer provided during the purchase after
-terminating this agreement or restricting access. These abilities do not
-limit the Licensor\'s ability to enforce this this agreement in other
-ways, such as by taking legal action.
+Indemnification
+===============
 
-### Copyright guarantee
+Licensee agrees to indemnify and hold Licensor harmless against any
+damage or loss (including reasonable attorneys\' fees) related to any
+claim based upon:
 
-The licensor has all legal rights needed to license the Streamline Icons
-under this agreement, as all these icons were created from scratch by
-the licensor itself.
+\(a\) use of the Icons in a manner prohibited under this license;
 
-### Limitation of Liability
+\(b\) changes made, or actions taken, by Licensor upon Licensee\'s
+direct instructions.
 
-If the Customer takes legal action against the Licensor related to
-Streamline Icons, the Customer\'s damages will be capped at the amount
-of fees the Customer actually paid the Company under this agreement.
+Miscellaneous
+=============
 
-### Payment
+Governing law
+-------------
 
-All payments are to be done in U.S. dollar currency through the
-Streamline Icons website, Stripe payment request or wire transfer. As
-soon as a successful payment is established, an email shall be sent on
-your registered email with the download link for the purchased license
-and an access to the streamline application.
+This License shall be deemed to have been executed in Norway and shall
+be governed by the laws of Norway, without regard to any conflict of law
+provisions. Exclusive legal venue is Oslo.
+
+Update of terms
+---------------
+
+The Licensor may from time to time issue new versions of this license.
+Unless you within 30 days from when you were first made aware or should
+have become aware of the new license has not made reservations directed
+at Licensor in writing, such new version of the license shall be deemed
+as accepted by you.
