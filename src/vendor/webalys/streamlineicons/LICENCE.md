@@ -5,7 +5,7 @@ registration no. 981 601 564), a Norwegian company ("**Licensor**" or
 "**Ibexa**") and the user ("**Licensee**" or "**you**").
 
 This license agreement is accepted by you by your download or use of
-Ibexa DXP ("**Software**") licensed under GNU General Public License v.
+Ibexa Open Source ("**Software**") licensed under GNU General Public License v.
 2 ("**GPL**") and covers your use of the icons from Webalys LLC, New
 Hampshire, USA, used in the graphical user interface of the Software.
 Use of these icons are not covered by the GPL.
