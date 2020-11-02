@@ -18,3 +18,7 @@ Options:
 1. -b : branch which will be used to create the tag
 
 If you are tagging for eZPlatform 2.5.x LTS you should use the 4.x branch.
+
+## Legal Notice
+
+The use of the graphical icons form Webalys LLC placed in this repository or file are to be used only together with Ibexa Open Source that is licensed under the GNU General Public License v. 2 (GPL). The use and distribution of the icons is subject to the Ibexa Icon License Agreement also placed in this repository.
