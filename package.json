@@ -17,7 +17,9 @@
         "move-moment-timezone": "cp -r node_modules/moment-timezone Resources/public/vendors/moment-timezone",
         "move-d3": "cp -r node_modules/d3 Resources/public/vendors/d3",
         "move-dagre-d3": "cp -r node_modules/dagre-d3 Resources/public/vendors/dagre-d3",
-        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types; npm run move-moment; npm run move-moment-timezone; npm run move-d3; npm run move-dagre-d3"
+        "move-chart-js": "cp -r node_modules/chart.js Resources/public/vendors/chart-js",
+        "move-js-md5": "cp -r node_modules/js-md5 Resources/public/vendors/js-md5",
+        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types; npm run move-moment; npm run move-moment-timezone; npm run move-d3; npm run move-dagre-d3; npm run move-chart-js; npm run move-js-md5"
     },
     "repository": {
         "type": "git",
@@ -30,19 +32,21 @@
     },
     "homepage": "https://github.com/ezsystems/ezplatform-admin-ui-assets#readme",
     "dependencies": {
-        "alloyeditor": "^1.5.27",
-        "bootstrap": "^4.5.0",
-        "create-react-class": "^15.6.3",
+        "alloyeditor": "^1.5.28",
+        "bootstrap": "^4.5.3",
+        "chart.js": "^2.9.4",
+        "create-react-class": "^15.7.0",
         "d3": "^5.16.0",
         "dagre-d3": "^0.6.4",
-        "flatpickr": "^4.6.3",
+        "flatpickr": "^4.6.6",
         "jquery": "^3.5.1",
-        "leaflet": "^1.6.0",
-        "moment-timezone": "^0.5.31",
+        "js-md5": "0.7.3",
+        "leaflet": "^1.7.1",
+        "moment-timezone": "^0.5.32",
         "popper.js": "^1.16.1",
         "prop-types": "^15.7.2",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
         "taggify": "^1.2.1"
     }
 }
