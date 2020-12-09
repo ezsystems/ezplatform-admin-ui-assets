@@ -71,6 +71,8 @@ D3_DIR="$VENDOR_DIR/d3"
 D3_NOTICE="$D3_DIR/D3_IN_EZPLATFORMUIASSETS.txt"
 DAGRE_D3_DIR="$VENDOR_DIR/dagre-d3"
 DAGRE_D3_NOTICE="$DAGRE_D3_DIR/DAGRE_D3_IN_EZPLATFORMUIASSETS.txt"
+JS_MD5_DIR="$VENDOR_DIR/js-md5"
+JS_MD5_NOTICE="$JS_MD5_DIR/JS_MD5_IN_EZPLATFORMUIASSETS.txt"
 
 CURRENT_BRANCH=`git branch | grep '*' | cut -d ' ' -f 2`
 TMP_BRANCH="version_$VERSION"
@@ -84,6 +86,9 @@ echo "# Removing the assets"
 [ ! -d "$VENDOR_DIR" ] && mkdir -p $VENDOR_DIR
 [ -d "$VENDOR_DIR" ] && rm -rf $VENDOR_DIR/*
 check_process "clean the vendor dir $VENDOR_DIR"
+
+echo "# Removing package-lock.json"
+rm -rf "package-lock.json"
 
 echo "# Installing dependendencies"
 npm install
@@ -178,6 +183,12 @@ rm -rf "$DAGRE_D3_DIR/node_modules" "$DAGRE_D3_DIR/lib" "$DAGRE_D3_DIR/dist/demo
 check_process "clean dagre-d3"
 echo "This is a customized dagre-d3 version." > $DAGRE_D3_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $DAGRE_D3_NOTICE
+
+echo "# Removing unused files from js-md5"
+rm -rf "$JS_MD5_DIR/src"
+check_process "clean js-md5"
+echo "This is a customized js-md5 version." > $JS_MD5_NOTICE
+echo "To decrease the size of the bundle, it includes production-only files" >> $JS_MD5_NOTICE
 
 echo "# Creating the custom branch: $TMP_BRANCH"
 git checkout -q -b "$TMP_BRANCH" > /dev/null
