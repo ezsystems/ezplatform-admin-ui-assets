@@ -1,0 +1,2 @@
+This is a customized js-md5 version.
+To decrease the size of the bundle, it includes production-only files
