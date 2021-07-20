@@ -51,11 +51,9 @@ BOOTSTRAP_DIR="$VENDOR_DIR/bootstrap"
 BOOTSTRAP_NOTICE="$BOOTSTRAP_DIR/BOOTSTRAP_IN_EZPLATFORMADMINUIASSETS.txt"
 FLATPICKR_DIR="$VENDOR_DIR/flatpickr"
 FLATPICKR_NOTICE="$FLATPICKR_DIR/FLATPICKR_IN_EZPLATFORMADMINUIASSETS.txt"
-JQUERY_DIR="$VENDOR_DIR/jquery"
-JQUERY_NOTICE="$JQUERY_DIR/JQUERY_IN_EZPLATFORMADMINUIASSETS.txt"
 LEAFLET_DIR="$VENDOR_DIR/leaflet"
 LEAFLET_NOTICE="$LEAFLET_DIR/LEAFLET_IN_EZPLATFORMADMINUIASSETS.txt"
-POPPER_DIR="$VENDOR_DIR/popper.js"
+POPPER_DIR="$VENDOR_DIR/@popperjs"
 POPPER_NOTICE="$POPPER_DIR/POPPER_IN_EZPLATFORMADMINUIASSETS.txt"
 REACT_DIR="$VENDOR_DIR/react"
 REACT_NOTICE="$REACT_DIR/REACT_IN_EZPLATFORMADMINUIASSETS.txt"
@@ -112,12 +110,6 @@ check_process "clean flatpickr"
 echo "This is a customized Flatpickr version." > $FLATPICKR_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $FLATPICKR_NOTICE
 
-echo "# Removing unused files from jQuery"
-rm -rf "$JQUERY_DIR/external" "$JQUERY_DIR/src" $JQUERY_DIR/dist/core.js $JQUERY_DIR/dist/jquery.js $JQUERY_DIR/dist/jquery.min.map $JQUERY_DIR/dist/jquery.slim.js $JQUERY_DIR/dist/jquery.slim.min.js $JQUERY_DIR/dist/jquery.slim.min.map $JQUERY_DIR/AUTHORS.txt $JQUERY_DIR/bower.json $JQUERY_DIR/README.md
-check_process "clean jquery"
-echo "This is a customized jQuery version." > $JQUERY_NOTICE
-echo "To decrease the size of the bundle, it includes production-only files" >> $JQUERY_NOTICE
-
 echo "# Removing unused files from Leaflet"
 rm -rf "$LEAFLET_DIR/src" $LEAFLET_DIR/CHANGELOG.md $LEAFLET_DIR/README.md
 check_process "clean Leaflet"
@@ -125,9 +117,9 @@ echo "This is a customized Leaflet version." > $LEAFLET_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $LEAFLET_NOTICE
 
 echo "# Removing unused files from Popper"
-rm -rf "$POPPER_DIR/dist/esm" "$POPPER_DIR/.tmp" "$POPPER_DIR/packages" $POPPER_DIR/dist/popper-utils.js $POPPER_DIR/dist/popper-utils.js.map $POPPER_DIR/dist/popper-utils.min.js $POPPER_DIR/dist/popper-utils.min.js.map $POPPER_DIR/dist/popper.js $POPPER_DIR/dist/popper.js.map $POPPER_DIR/dist/popper.min.js $POPPER_DIR/dist/popper.min.js.map $POPPER_DIR/dist/umd/popper-utils.js $POPPER_DIR/dist/umd/popper-utils.js.map $POPPER_DIR/dist/umd/popper-utils.min.js $POPPER_DIR/dist/umd/popper-utils.min.js.map $POPPER_DIR/dist/umd/popper.js $POPPER_DIR/dist/umd/popper.js.map $POPPER_DIR/.eslintignore $POPPER_DIR/.eslintrc.js $POPPER_DIR/index.d.ts
-check_process "clean popper.js"
-echo "This is a customized Popper.js version." > $POPPER_NOTICE
+rm -rf "$POPPER_DIR/core/dist/esm" "$POPPER_DIR/core/.tmp" $POPPER_DIR/core/dist/umd/popper-utils.js $POPPER_DIR/core/dist/umd/popper-utils.js.map $POPPER_DIR/core/dist/umd/popper-utils.min.js $POPPER_DIR/core/dist/umd/popper-utils.min.js.map $POPPER_DIR/core/dist/umd/popper.js $POPPER_DIR/core/dist/umd/popper.js.map $POPPER_DIR/index.d.ts
+check_process "clean popperjs"
+echo "This is a customized Popperjs version." > $POPPER_NOTICE
 echo "To decrease the size of the bundle, it includes production-only files" >> $POPPER_NOTICE
 
 echo "# Removing unused files from react"
