@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Taggify tests</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+</head>
+<body>
+    <div id="mocha"></div>
+    <div id="messages"></div>
+    <div id="fixtures"></div>
+
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/chai-dom/chai-dom.js"></script>
+    <script src="../src/js/taggify.js"></script>
+
+    <script>
+        mocha.setup('bdd');
+        mocha.reporter('html');
+    </script>
+    <script src="taggify-tests.js"></script>
+    <script>mocha.run();</script>
+</body>
+</html>

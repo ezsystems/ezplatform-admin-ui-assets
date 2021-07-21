@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 60vw;
+    margin: auto;
+    font: 1rem/1.4 Helvetica, Arial, sans-serif;
+    letter-spacing: -.05rem;
+}
+
+.taggify__wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.taggify__label {
+    font-size: .75rem;
+    display: block;
+}
+
+.taggify__input {
+    font-size: .75rem;
+    width: 100%;
+}
+
+.taggify__tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.taggify__tag {
+    flex: 1 1 100px;
+    margin: .25rem;
+    background: #eee;
+    border: 1px solid #aaa;
+    padding: .25rem 1rem;
+    border-radius: .25rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    align-self: center;
+}
+
+.taggify__btn--remove {
+    border: 0;
+    background: #ccc;
+    padding: .25rem 1rem;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1.75rem;
+    cursor: pointer;
+    border-radius: 0 .25rem .25rem 0;
+    transform: translate(100%, 0);
+    opacity: 0;
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+}
+
+.taggify__tag:hover .taggify__btn--remove,
+.taggify__tag:focus .taggify__btn--remove,
+.taggify__tag--hover .taggify__btn--remove {
+    opacity: 1;
+    z-index: 2;
+    transform: translate(0, 0);
+    padding: .25rem .5rem;
+}
+
+.taggify__list-item {
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+    border: 1px solid #eee;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .75rem;
+}
+
+.taggify__list-item:hover {
+    background: #ddd;
+}
