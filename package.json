@@ -19,7 +19,8 @@
         "move-dagre-d3": "cp -r node_modules/dagre-d3 Resources/public/vendors/dagre-d3",
         "move-chart-js": "cp -r node_modules/chart.js Resources/public/vendors/chart-js",
         "move-js-md5": "cp -r node_modules/js-md5 Resources/public/vendors/js-md5",
-        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types; npm run move-moment; npm run move-moment-timezone; npm run move-d3; npm run move-dagre-d3; npm run move-chart-js; npm run move-js-md5"
+        "move-ckeditor5": "cp -r node_modules/@ckeditor Resources/public/vendors/@ckeditor",
+        "prepare-release": "npm run create-folder; npm run move-bootstrap; npm run move-jquery; npm run move-alloyeditor; npm run move-leaflet; npm run move-react; npm run move-react-dom; npm run move-taggify; npm run move-popper.js; npm run move-flatpickr; npm run move-create-react-class; npm run move-prop-types; npm run move-moment; npm run move-moment-timezone; npm run move-d3; npm run move-dagre-d3; npm run move-chart-js; npm run move-js-md5; npm run move-ckeditor5"
     },
     "repository": {
         "type": "git",
@@ -32,6 +33,11 @@
     },
     "homepage": "https://github.com/ezsystems/ezplatform-admin-ui-assets#readme",
     "dependencies": {
+        "@ckeditor/ckeditor5-alignment": "^26.0.0",
+        "@ckeditor/ckeditor5-build-inline": "^26.0.0",
+        "@ckeditor/ckeditor5-dev-utils": "^24.4.1",
+        "@ckeditor/ckeditor5-widget": "^26.0.0",
+        "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
         "alloyeditor": "^1.5.28",
         "bootstrap": "^4.5.3",
         "chart.js": "^2.9.4",
