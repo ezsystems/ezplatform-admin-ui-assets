@@ -1,0 +1,85 @@
+{
+  "_from": "@ckeditor/ckeditor5-editor-balloon@^26.0.0",
+  "_id": "@ckeditor/ckeditor5-editor-balloon@26.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-uvFaK6Sa+8qUQtAxtpykvbV6kqbTlObfyKJbOSRLSRRNrejfYQJbCe1Gbzl3sjATm/Og1piLvCMzZG12SQ6LWQ==",
+  "_location": "/@ckeditor/ckeditor5-editor-balloon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-editor-balloon@^26.0.0",
+    "name": "@ckeditor/ckeditor5-editor-balloon",
+    "escapedName": "@ckeditor%2fckeditor5-editor-balloon",
+    "scope": "@ckeditor",
+    "rawSpec": "^26.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^26.0.0"
+  },
+  "_requiredBy": [
+    "/@ckeditor/ckeditor5-theme-lark"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-editor-balloon/-/ckeditor5-editor-balloon-26.0.0.tgz",
+  "_shasum": "da944b096e02821cc07870828c799ebd05bcf6f4",
+  "_spec": "@ckeditor/ckeditor5-editor-balloon@^26.0.0",
+  "_where": "/Users/dariuszszut/projects/ibexa-commerce.v4/vendor/ezsystems/ezplatform-admin-ui-assets/node_modules/@ckeditor/ckeditor5-theme-lark",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ckeditor5": "^26.0.0",
+    "lodash-es": "^4.17.15"
+  },
+  "deprecated": false,
+  "description": "Balloon editor implementation for CKEditor 5.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^26.0.0",
+    "@ckeditor/ckeditor5-core": "^26.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^24.0.0",
+    "@ckeditor/ckeditor5-engine": "^26.0.0",
+    "@ckeditor/ckeditor5-enter": "^26.0.0",
+    "@ckeditor/ckeditor5-heading": "^26.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^26.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
+    "@ckeditor/ckeditor5-typing": "^26.0.0",
+    "@ckeditor/ckeditor5-ui": "^26.0.0",
+    "@ckeditor/ckeditor5-undo": "^26.0.0",
+    "@ckeditor/ckeditor5-utils": "^26.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme",
+    "build"
+  ],
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-editor"
+  ],
+  "license": "GPL-2.0-or-later",
+  "main": "src/index.js",
+  "name": "@ckeditor/ckeditor5-editor-balloon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-editor-balloon"
+  },
+  "scripts": {
+    "dll:build": "webpack"
+  },
+  "version": "26.0.0"
+}
