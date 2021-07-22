@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "label": "Piotr Nalepa"
+    },
+    {
+      "id": 2,
+      "label": "Magdalena Makuch-Nalepa"
+    },
+    {
+      "id": 3,
+      "label": "Michał Pipa"
+    },
+    {
+      "id": 4,
+      "label": "Elżbieta Nalepa"
+    },
+    {
+      "id": 5,
+      "label": "Jince Kuruvilla"
+    },
+    {
+      "id": 6,
+      "label": "Łukasz Serwatka"
+    },
+    {
+      "id": 7,
+      "label": "Sławomir Uchto"
+    },
+    {
+      "id": 8,
+      "label": "Piotr Najsztub"
+    }
+  ]
+}
