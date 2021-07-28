@@ -1,0 +1,83 @@
+{
+  "_from": "@ckeditor/ckeditor5-essentials@^26.0.0",
+  "_id": "@ckeditor/ckeditor5-essentials@26.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-472HTZmXx4n5Bv+Hq8OKkUkyo4OgF8M8fdgQaIRn9OjfaUv2vCmw74nrD3xGEv5MqAfeciGbkgI0MY+H8dDJwA==",
+  "_location": "/@ckeditor/ckeditor5-essentials",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-essentials@^26.0.0",
+    "name": "@ckeditor/ckeditor5-essentials",
+    "escapedName": "@ckeditor%2fckeditor5-essentials",
+    "scope": "@ckeditor",
+    "rawSpec": "^26.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^26.0.0"
+  },
+  "_requiredBy": [
+    "/@ckeditor/ckeditor5-build-inline"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-essentials/-/ckeditor5-essentials-26.0.0.tgz",
+  "_shasum": "f67873cc5f90171fffa0ffedb15138fb5f1dbb12",
+  "_spec": "@ckeditor/ckeditor5-essentials@^26.0.0",
+  "_where": "/Users/dariuszszut/projects/temp/modal/vendor/ezsystems/ezplatform-admin-ui-assets/node_modules/@ckeditor/ckeditor5-build-inline",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ckeditor5": "^26.0.0"
+  },
+  "deprecated": false,
+  "description": "Essential editing features for CKEditor 5.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-clipboard": "^26.0.0",
+    "@ckeditor/ckeditor5-core": "^26.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^24.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^26.0.0",
+    "@ckeditor/ckeditor5-enter": "^26.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^26.0.0",
+    "@ckeditor/ckeditor5-select-all": "^26.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
+    "@ckeditor/ckeditor5-typing": "^26.0.0",
+    "@ckeditor/ckeditor5-undo": "^26.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme",
+    "build"
+  ],
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-feature",
+    "ckeditor5-plugin"
+  ],
+  "license": "GPL-2.0-or-later",
+  "main": "src/index.js",
+  "name": "@ckeditor/ckeditor5-essentials",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-essentials"
+  },
+  "scripts": {
+    "dll:build": "webpack"
+  },
+  "version": "26.0.0"
+}

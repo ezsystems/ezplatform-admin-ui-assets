@@ -1,0 +1,79 @@
+{
+  "_from": "@ckeditor/ckeditor5-select-all@^26.0.0",
+  "_id": "@ckeditor/ckeditor5-select-all@26.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-EeGVH6rbHSyeqiTJqTdyU46F9celxNHskID1HFYHjVbznj69bFCJ6yIwtDRprp99rKpQKIAEThl1JjS1Y+qiCw==",
+  "_location": "/@ckeditor/ckeditor5-select-all",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-select-all@^26.0.0",
+    "name": "@ckeditor/ckeditor5-select-all",
+    "escapedName": "@ckeditor%2fckeditor5-select-all",
+    "scope": "@ckeditor",
+    "rawSpec": "^26.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^26.0.0"
+  },
+  "_requiredBy": [
+    "/@ckeditor/ckeditor5-theme-lark",
+    "/ckeditor5"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-select-all/-/ckeditor5-select-all-26.0.0.tgz",
+  "_shasum": "58e7afd1593dbc1acb0ff3fdf56c6e470a6c1bba",
+  "_spec": "@ckeditor/ckeditor5-select-all@^26.0.0",
+  "_where": "/Users/dariuszszut/projects/temp/modal/vendor/ezsystems/ezplatform-admin-ui-assets/node_modules/ckeditor5",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^26.0.0",
+    "@ckeditor/ckeditor5-ui": "^26.0.0",
+    "@ckeditor/ckeditor5-utils": "^26.0.0"
+  },
+  "deprecated": false,
+  "description": "Select all feature for CKEditor 5.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^26.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^26.0.0",
+    "@ckeditor/ckeditor5-engine": "^26.0.0",
+    "@ckeditor/ckeditor5-essentials": "^26.0.0",
+    "@ckeditor/ckeditor5-heading": "^26.0.0",
+    "@ckeditor/ckeditor5-image": "^26.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^26.0.0",
+    "@ckeditor/ckeditor5-table": "^26.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme"
+  ],
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-feature",
+    "ckeditor5-plugin",
+    "ckeditor5-dll"
+  ],
+  "license": "GPL-2.0-or-later",
+  "main": "src/index.js",
+  "name": "@ckeditor/ckeditor5-select-all",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-select-all"
+  },
+  "version": "26.0.0"
+}

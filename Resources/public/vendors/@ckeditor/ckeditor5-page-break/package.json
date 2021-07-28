@@ -1,0 +1,84 @@
+{
+  "_from": "@ckeditor/ckeditor5-page-break@^26.0.0",
+  "_id": "@ckeditor/ckeditor5-page-break@26.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-hw/lNOGl3WLIR54FD+NZ1GrYe47R6QIAyPr1U8+BpSJNq5qHN8KfG5yGF4/1X8qA2QmOL/B9p9CP3pMn1ArOKg==",
+  "_location": "/@ckeditor/ckeditor5-page-break",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-page-break@^26.0.0",
+    "name": "@ckeditor/ckeditor5-page-break",
+    "escapedName": "@ckeditor%2fckeditor5-page-break",
+    "scope": "@ckeditor",
+    "rawSpec": "^26.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^26.0.0"
+  },
+  "_requiredBy": [
+    "/@ckeditor/ckeditor5-theme-lark"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-page-break/-/ckeditor5-page-break-26.0.0.tgz",
+  "_shasum": "c2cd642d3d5855e8e90d608d264cc7179698e728",
+  "_spec": "@ckeditor/ckeditor5-page-break@^26.0.0",
+  "_where": "/Users/dariuszszut/projects/temp/modal/vendor/ezsystems/ezplatform-admin-ui-assets/node_modules/@ckeditor/ckeditor5-theme-lark",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ckeditor5": "^26.0.0"
+  },
+  "deprecated": false,
+  "description": "Page break feature for CKEditor 5.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-cloud-services": "^26.0.0",
+    "@ckeditor/ckeditor5-core": "^26.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^24.0.0",
+    "@ckeditor/ckeditor5-easy-image": "^26.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^26.0.0",
+    "@ckeditor/ckeditor5-engine": "^26.0.0",
+    "@ckeditor/ckeditor5-image": "^26.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^26.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
+    "@ckeditor/ckeditor5-ui": "^26.0.0",
+    "@ckeditor/ckeditor5-widget": "^26.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme",
+    "build"
+  ],
+  "homepage": "https://ckeditor.com",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-feature",
+    "ckeditor5-plugin"
+  ],
+  "license": "GPL-2.0-or-later",
+  "main": "src/index.js",
+  "name": "@ckeditor/ckeditor5-page-break",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-page-break"
+  },
+  "scripts": {
+    "dll:build": "webpack"
+  },
+  "version": "26.0.0"
+}

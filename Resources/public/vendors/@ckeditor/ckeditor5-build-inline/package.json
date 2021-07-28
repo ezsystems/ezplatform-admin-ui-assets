@@ -1,0 +1,108 @@
+{
+  "_from": "@ckeditor/ckeditor5-build-inline@^26.0.0",
+  "_id": "@ckeditor/ckeditor5-build-inline@26.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-xovocJlWqVXDNgpF9J2bOxcuAJ8DFLm3iKLyJ+atiBC5SYiqT/dra50NoACIwVcWjO8VbFtZixofTMzVXiJGwA==",
+  "_location": "/@ckeditor/ckeditor5-build-inline",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-build-inline@^26.0.0",
+    "name": "@ckeditor/ckeditor5-build-inline",
+    "escapedName": "@ckeditor%2fckeditor5-build-inline",
+    "scope": "@ckeditor",
+    "rawSpec": "^26.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^26.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-build-inline/-/ckeditor5-build-inline-26.0.0.tgz",
+  "_shasum": "f7dba0201e50422012d88ac48951bcc523b84ec9",
+  "_spec": "@ckeditor/ckeditor5-build-inline@^26.0.0",
+  "_where": "/Users/dariuszszut/projects/temp/modal/vendor/ezsystems/ezplatform-admin-ui-assets",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@ckeditor/ckeditor5-adapter-ckfinder": "^26.0.0",
+    "@ckeditor/ckeditor5-autoformat": "^26.0.0",
+    "@ckeditor/ckeditor5-basic-styles": "^26.0.0",
+    "@ckeditor/ckeditor5-block-quote": "^26.0.0",
+    "@ckeditor/ckeditor5-ckfinder": "^26.0.0",
+    "@ckeditor/ckeditor5-cloud-services": "^26.0.0",
+    "@ckeditor/ckeditor5-easy-image": "^26.0.0",
+    "@ckeditor/ckeditor5-editor-inline": "^26.0.0",
+    "@ckeditor/ckeditor5-essentials": "^26.0.0",
+    "@ckeditor/ckeditor5-heading": "^26.0.0",
+    "@ckeditor/ckeditor5-image": "^26.0.0",
+    "@ckeditor/ckeditor5-indent": "^26.0.0",
+    "@ckeditor/ckeditor5-link": "^26.0.0",
+    "@ckeditor/ckeditor5-list": "^26.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^26.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^26.0.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^26.0.0",
+    "@ckeditor/ckeditor5-table": "^26.0.0",
+    "@ckeditor/ckeditor5-typing": "^26.0.0"
+  },
+  "deprecated": false,
+  "description": "The inline editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-core": "^26.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^20.0.0",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^20.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^4.0.1",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "build"
+  ],
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "keywords": [
+    "ckeditor5-build",
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "wysiwyg",
+    "rich text",
+    "editor",
+    "html",
+    "contentEditable",
+    "editing",
+    "operational transformation",
+    "ot",
+    "collaboration",
+    "collaborative",
+    "real-time",
+    "framework"
+  ],
+  "license": "GPL-2.0-or-later",
+  "main": "./build/ckeditor.js",
+  "name": "@ckeditor/ckeditor5-build-inline",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-build-inline"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "preversion": "npm run build"
+  },
+  "version": "26.0.0"
+}

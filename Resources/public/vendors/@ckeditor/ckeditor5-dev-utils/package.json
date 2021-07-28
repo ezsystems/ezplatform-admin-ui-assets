@@ -1,0 +1,83 @@
+{
+  "_from": "@ckeditor/ckeditor5-dev-utils@^24.4.1",
+  "_id": "@ckeditor/ckeditor5-dev-utils@24.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-JvPVpapqRcWUCnBOuWN9N9nJAZn5mju4xTLAwxLUXImsp2cnMeWYvxALHb/seIZpiBq8xWd4s4QEYOnatARyOQ==",
+  "_location": "/@ckeditor/ckeditor5-dev-utils",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-dev-utils@^24.4.1",
+    "name": "@ckeditor/ckeditor5-dev-utils",
+    "escapedName": "@ckeditor%2fckeditor5-dev-utils",
+    "scope": "@ckeditor",
+    "rawSpec": "^24.4.1",
+    "saveSpec": null,
+    "fetchSpec": "^24.4.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-24.4.2.tgz",
+  "_shasum": "d8a6420bcd2aedd71dac18d06cf7bae95b2b66cf",
+  "_spec": "@ckeditor/ckeditor5-dev-utils@^24.4.1",
+  "_where": "/Users/dariuszszut/projects/temp/modal/vendor/ezsystems/ezplatform-admin-ui-assets",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "acorn": "^6.2.1",
+    "acorn-walk": "^6.2.0",
+    "chalk": "^3.0.0",
+    "cssnano": "^4.0.0",
+    "del": "^5.0.0",
+    "escodegen": "^1.9.0",
+    "fs-extra": "^8.1.0",
+    "javascript-stringify": "^1.6.0",
+    "pofile": "^1.0.9",
+    "postcss": "^7.0.17",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nesting": "^7.0.0",
+    "raw-loader": "^4.0.1",
+    "shelljs": "^0.8.1",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.2",
+    "through2": "^3.0.1"
+  },
+  "deprecated": false,
+  "description": "Utils for CKEditor 5 development tools packages.",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "lodash": "^4.17.15",
+    "mockery": "^2.1.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.3.2",
+    "vinyl": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/ckeditor/ckeditor5-dev/tree/master/packages/ckeditor5-dev-utils",
+  "keywords": [],
+  "license": "GPL-2.0-or-later",
+  "main": "lib/index.js",
+  "name": "@ckeditor/ckeditor5-dev-utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5-dev.git",
+    "directory": "packages/ckeditor5-dev-utils"
+  },
+  "version": "24.4.2"
+}
