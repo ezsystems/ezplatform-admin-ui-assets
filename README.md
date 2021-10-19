@@ -6,6 +6,25 @@ To use this package, [install Ibexa DXP](https://doc.ibexa.co/en/latest/install/
 
 This package contains assets for Back Office interface.
 
+## Installing dependencies
+
+1. `npm install`
+2. `npm run prepare-release`
+
+## Preparing tag for release
+
+To prepare a tag for release you have to run the following command from the root directory of the bundle:
+
+```
+sh bin/prepare_release.sh -v 1.0.0 -b master
+```
+
+Options:
+1. -v : tag to be released
+1. -b : branch used to create the tag
+
+If you are tagging for eZPlatform 2.5.x LTS you should use the 4.x branch.
+
 ## COPYRIGHT
 
 Copyright (C) 1999-2021 Ibexa AS (formerly eZ Systems AS). All rights reserved.
