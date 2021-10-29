@@ -1,0 +1,85 @@
+{
+  "_from": "@ckeditor/ckeditor5-alignment@^26.0.0",
+  "_id": "@ckeditor/ckeditor5-alignment@26.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-CnxCsGhsNmbHxwlm223i8O5t2l4e2o0opyGlKyUwt61rj5ebDYSd9bbQPT7iBXAFMnDPosYxNCz7Kdey7Wi1Dg==",
+  "_location": "/@ckeditor/ckeditor5-alignment",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ckeditor/ckeditor5-alignment@^26.0.0",
+    "name": "@ckeditor/ckeditor5-alignment",
+    "escapedName": "@ckeditor%2fckeditor5-alignment",
+    "scope": "@ckeditor",
+    "rawSpec": "^26.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^26.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-alignment/-/ckeditor5-alignment-26.0.0.tgz",
+  "_shasum": "e4dbdcd6b1e386904cdfa1a96f26cbf9f817e386",
+  "_spec": "@ckeditor/ckeditor5-alignment@^26.0.0",
+  "_where": "/Users/dariuszszut/projects/ibexa-commerce.v4/vendor/ezsystems/ezplatform-admin-ui-assets",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ckeditor5": "^26.0.0"
+  },
+  "deprecated": false,
+  "description": "Text alignment feature for CKEditor 5.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-block-quote": "^26.0.0",
+    "@ckeditor/ckeditor5-core": "^26.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^24.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^26.0.0",
+    "@ckeditor/ckeditor5-engine": "^26.0.0",
+    "@ckeditor/ckeditor5-enter": "^26.0.0",
+    "@ckeditor/ckeditor5-heading": "^26.0.0",
+    "@ckeditor/ckeditor5-image": "^26.0.0",
+    "@ckeditor/ckeditor5-list": "^26.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^26.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
+    "@ckeditor/ckeditor5-typing": "^26.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme",
+    "build"
+  ],
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-feature",
+    "ckeditor5-plugin"
+  ],
+  "license": "GPL-2.0-or-later",
+  "main": "src/index.js",
+  "name": "@ckeditor/ckeditor5-alignment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
+    "directory": "packages/ckeditor5-alignment"
+  },
+  "scripts": {
+    "dll:build": "webpack"
+  },
+  "version": "26.0.0"
+}
