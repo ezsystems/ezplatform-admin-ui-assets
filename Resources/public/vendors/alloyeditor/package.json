@@ -1,0 +1,106 @@
+{
+  "_from": "alloyeditor@1.5.28",
+  "_id": "alloyeditor@1.5.28",
+  "_inBundle": false,
+  "_integrity": "sha512-UgjBw61RX6xJmvLm3bfVE82kovVvU0tqnG2JjTLY50GLCE842hvq6uYrMnRiN9e88jmIoocpPByfAqCTj0+YZg==",
+  "_location": "/alloyeditor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "alloyeditor@1.5.28",
+    "name": "alloyeditor",
+    "escapedName": "alloyeditor",
+    "rawSpec": "1.5.28",
+    "saveSpec": null,
+    "fetchSpec": "1.5.28"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/alloyeditor/-/alloyeditor-1.5.28.tgz",
+  "_shasum": "7a7b349b104c9ca32978938eb2d2c89ecbabf846",
+  "_spec": "alloyeditor@1.5.28",
+  "_where": "/Users/dariuszszut/projects/ibexa-commerce.v4/vendor/ezsystems/ezplatform-admin-ui-assets",
+  "author": {
+    "name": "Iliyan Peychev"
+  },
+  "bugs": {
+    "url": "https://github.com/liferay/alloy-editor/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "AlloyEditor, a modern WYSIWYG editor, build on top of CKEditor",
+  "devDependencies": {
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "bourbon": "git+https://github.com/thoughtbot/bourbon.git#v4.2.6",
+    "chai": "^3.5.0",
+    "del": "2.2.0",
+    "dir-compare": "1.3.0",
+    "eslint": "3.1.1",
+    "event-stream": "3.3.1",
+    "gulp": "~3.9.0",
+    "gulp-babel": "6.1.1",
+    "gulp-compass": "2.1.0",
+    "gulp-concat": "2.6.0",
+    "gulp-consolidate": "0.2.0",
+    "gulp-cssnano": "2.0.0",
+    "gulp-empty": "0.1.1",
+    "gulp-iconfont": "8.0.1",
+    "gulp-rename": "1.2.2",
+    "gulp-replace": "0.5.3",
+    "gulp-sass": "3.1.0",
+    "gulp-template": "4.0.0",
+    "gulp-uglify": "2.0.0",
+    "gulp-zip": "3.0.2",
+    "hash-files": "^1.1.1",
+    "karma": "1.4.0",
+    "karma-babel-preprocessor": "6.0.1",
+    "karma-chai": "0.1.0",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-coverage": "1.1.1",
+    "karma-firefox-launcher": "1.0.0",
+    "karma-fixture": "0.2.5",
+    "karma-html2js-preprocessor": "1.1.0",
+    "karma-ie-launcher": "1.0.0",
+    "karma-ievms": "git+https://github.com/niksy/karma-ievms.git#browser-decorator",
+    "karma-junit-reporter": "1.2.0",
+    "karma-mocha": "1.3.0",
+    "karma-safari-launcher": "1.0.0",
+    "karma-sauce-launcher": "2.0.2",
+    "karma-sinon": "1.0.4",
+    "lodash": "4.17.4",
+    "mkdirp": "0.5.1",
+    "mocha": "3.2.0",
+    "require-dir": "0.3.2",
+    "run-sequence": "1.1.2",
+    "sinon": "1.15.4",
+    "walk": "2.3.9",
+    "yargs": "6.6.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "http://alloyeditor.com",
+  "keywords": [
+    "editor",
+    "wysiwyg"
+  ],
+  "license": "LGPL-3.0",
+  "main": "dist/alloy-editor/alloy-editor-no-react.js",
+  "name": "alloyeditor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liferay/alloy-editor.git"
+  },
+  "resolutions": {
+    "selenium-webdriver": "4.0.0-alpha.1"
+  },
+  "scripts": {
+    "prepublishOnly": "gulp clean && gulp release",
+    "test": "gulp test",
+    "testSaucelabs": "gulp test:saucelabs"
+  },
+  "version": "1.5.28"
+}
