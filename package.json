@@ -42,7 +42,7 @@
         "jquery": "^3.5.1",
         "js-md5": "0.7.3",
         "leaflet": "^1.7.1",
-        "moment-timezone": "^0.5.32",
+        "moment-timezone": "^0.5.43",
         "popper.js": "^1.16.1",
         "prop-types": "^15.7.2",
         "react": "^16.14.0",
